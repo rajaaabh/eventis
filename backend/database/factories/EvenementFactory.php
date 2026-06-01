@@ -19,10 +19,10 @@ class EvenementFactory extends Factory
         $dateFin   = $this->faker->dateTimeBetween($dateDebut->format('Y-m-d H:i:s'), $dateDebut->format('Y-m-d H:i:s') . ' +1 week');
 
         return [
-            'user_id'         => User::factory(),
-            'categorie_id'    => Categorie::factory(),
-            'organisateur_id' => Organisateur::factory(),
-            'localisation_id' => Localisation::factory(),
+            'user_id'         => User::first()->id,
+            'categorie_id'    => Categorie::inRandomOrder()->first()->id,
+            'organisateur_id' => Organisateur::inRandomOrder()->first()->id,
+            'localisation_id' => Localisation::inRandomOrder()->first()->id,
             'titre'           => $this->faker->sentence(4),
             'description'     => $this->faker->paragraphs(3, true),
             'date_debut'      => $dateDebut,

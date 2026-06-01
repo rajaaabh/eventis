@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
         Localisation::factory(10)->create();
         Categorie::factory(8)->create();
         Organisateur::factory(10)->create();
-        Evenement::factory(20)->create();
-        Inscription::factory(50)->create();
+        Evenement::factory(15)->create();
+        Inscription::factory(20)->create();
     }
 }
