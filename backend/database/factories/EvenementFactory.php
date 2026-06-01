@@ -16,21 +16,21 @@ class EvenementFactory extends Factory
     public function definition(): array
     {
         $dateDebut = $this->faker->dateTimeBetween('now', '+6 months');
-        $dateFin   = $this->faker->dateTimeBetween($dateDebut, '+1 week');
+        $dateFin   = $this->faker->dateTimeBetween($dateDebut->format('Y-m-d H:i:s'), $dateDebut->format('Y-m-d H:i:s') . ' +1 week');
 
         return [
-            'user_id'          => User::factory(),
-            'categorie_id'     => Categorie::factory(),
-            'organisateur_id'  => Organisateur::factory(),
-            'localisation_id'  => Localisation::factory(),
-            'titre'            => $this->faker->sentence(4),
-            'description'      => $this->faker->paragraphs(3, true),
-            'date_debut'       => $dateDebut,
-            'date_fin'         => $dateFin,
-            'lieu'             => $this->faker->address(),
-            'capacite_max'     => $this->faker->randomElement([50, 100, 200, 300, 500]),
-            'statut'           => $this->faker->randomElement(['publie', 'brouillon', 'annule']),
-            'image_url'        => null,
+            'user_id'         => User::factory(),
+            'categorie_id'    => Categorie::factory(),
+            'organisateur_id' => Organisateur::factory(),
+            'localisation_id' => Localisation::factory(),
+            'titre'           => $this->faker->sentence(4),
+            'description'     => $this->faker->paragraphs(3, true),
+            'date_debut'      => $dateDebut,
+            'date_fin'        => $dateFin,
+            'lieu'            => $this->faker->address(),
+            'capacite_max'    => $this->faker->randomElement([50, 100, 200, 300, 500]),
+            'statut'          => $this->faker->randomElement(['publie', 'brouillon', 'annule']),
+            'image_url'       => null,
         ];
     }
 }
