@@ -18,7 +18,6 @@ class InscriptionFactory extends Factory
             'nom_participant'      => $this->faker->name(),
             'email_participant'    => $this->faker->safeEmail(),
             'token_desinscription' => Str::uuid(),
-            'inscrit_le'           => $this->faker->dateTimeBetween('-1 month', 'now'),
         ];
     }
 }

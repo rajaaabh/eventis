@@ -16,7 +16,6 @@ class InscriptionResource extends JsonResource
             'id' => $this->id,
             'nom_participant' => $this->nom_participant,
             'email_participant' => $this->email_participant,
-            'inscrit_le' => $this->inscrit_le->format('d-m-Y H:i'),
             'evenement' => new EvenementResource($this->whenLoaded('evenement')),
             'created_at' => $this->created_at->format('d-m-Y H:i'),
             'updated_at' => $this->updated_at->format('d-m-Y H:i'),

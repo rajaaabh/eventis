@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('nom_participant');
             $table->string('email_participant');
             $table->string('token_desinscription')->unique();
-            $table->dateTime('inscrit_le')->useCurrent();
             $table->timestamps();
             $table->softDeletes();
             $table->index('email_participant');

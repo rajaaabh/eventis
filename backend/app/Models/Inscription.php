@@ -17,13 +17,11 @@ class Inscription extends Model
         'nom_participant',
         'email_participant',
         'token_desinscription',
-        'inscrit_le',
     ];
 
     protected function casts(): array
     {
         return [
-            'inscrit_le' => 'datetime',
             'deleted_at' => 'datetime',
         ];
     }
