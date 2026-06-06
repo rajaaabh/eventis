@@ -24,7 +24,7 @@ class Evenement extends Model
         'lieu',
         'capacite_max',
         'statut',
-        'image_url',
+        'image',
     ];
 
     protected function casts(): array

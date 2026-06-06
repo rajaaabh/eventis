@@ -24,7 +24,7 @@ return new class extends Migration
             $table->string('lieu')->nullable();
             $table->integer('capacite_max')->nullable();
             $table->enum('statut', ['publie', 'annule', 'termine'])->default('publie');
-            $table->string('image_url')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
             $table->softDeletes();
             $table->index('titre');

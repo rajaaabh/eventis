@@ -33,8 +33,8 @@ class UpdateEvenementRequest extends FormRequest
             'date_fin' => 'nullable|date|after:date_debut',
             'lieu' => 'nullable|string|max:255',
             'capacite_max' => 'nullable|integer|min:1',
-            'statut' => 'required|in:publie,annule,termine',
-            'image_url' => 'nullable|string'
+            'statut' => 'nullable|in:publie,annule,termine',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,webp|max:2048',
         ];
     }
 

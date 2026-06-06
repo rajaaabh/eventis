@@ -7,8 +7,8 @@ export default function EvenementCard({ evenement }) {
     return (
         <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-md hover:-translate-y-1 transition-all duration-300">
             <div className="h-40 relative">
-                {evenement.image_url ? (
-                    <img src={evenement.image_url} alt={evenement.titre} className="w-full h-full object-cover" />
+                {evenement.image ? (
+                    <img src={evenement.image} alt={evenement.titre} className="w-full h-full object-cover" />
                 ) : (
                     <div className="w-full h-full bg-linear-to-br from-red-400 to-red-600 flex items-center justify-center">
                         <Calendar size={36} className="text-white opacity-50" />

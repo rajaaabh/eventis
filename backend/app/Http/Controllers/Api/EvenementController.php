@@ -11,6 +11,7 @@ use App\Models\Evenement;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Storage;
 
 class EvenementController extends Controller
 {
@@ -61,7 +62,7 @@ class EvenementController extends Controller
             ->findOrFail($id);
 
         return response()->json([
-            'success' => true,
+            'success'   => true,
             'evenement' => new EvenementResource($evenement),
         ], 200);
     }
@@ -79,14 +80,23 @@ class EvenementController extends Controller
             ], 422);
         }
 
+        $imagePath = null;
+        if ($request->hasFile('image')) {
+            $imagePath = $request->file('image')->store('evenements', 'public');
+        }
+
         $evenement = Evenement::create(array_merge(
             $request->validated(),
-            ['user_id' => $request->user()->id]
+            [
+                'user_id' => $request->user()->id,
+                'image'   => $imagePath,
+                'statut'  => 'publie',
+            ]
         ));
 
         return response()->json([
-            'success' => true,
-            'message' => 'Événement créé avec succès',
+            'success'   => true,
+            'message'   => 'Événement créé avec succès',
             'evenement' => new EvenementResource($evenement->load(['categorie', 'localisation', 'organisateur'])),
         ], 201);
     }
@@ -122,11 +132,24 @@ class EvenementController extends Controller
             ], 409);
         }
 
-        $evenement->update($request->validated());
+        $data = $request->validated();
+
+        if ($request->hasFile('image')) {
+            if ($evenement->image) {
+                Storage::disk('public')->delete($evenement->image);
+            }
+            $data['image'] = $request->file('image')->store('evenements', 'public');
+        }
+
+        if (!isset($data['statut'])) {
+            unset($data['statut']);
+        }
+
+        $evenement->update($data);
 
         return response()->json([
-            'success' => true,
-            'message' => 'Événement mis à jour avec succès',
+            'success'   => true,
+            'message'   => 'Événement mis à jour avec succès',
             'evenement' => new EvenementResource($evenement->load(['categorie', 'localisation', 'organisateur'])),
         ], 200);
     }
@@ -187,6 +210,10 @@ class EvenementController extends Controller
                 'success' => false,
                 'message' => 'Impossible de supprimer cet événement car il a des inscriptions.',
             ], 409);
+        }
+
+        if ($evenement->image) {
+            Storage::disk('public')->delete($evenement->image);
         }
 
         $evenement->delete();

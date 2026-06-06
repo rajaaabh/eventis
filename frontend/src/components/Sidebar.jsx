@@ -91,7 +91,7 @@ export default function Sidebar() {
             <div className="lg:hidden h-16" />
 
             {/* DESKTOP */}
-            <aside className="hidden lg:flex flex-col w-64 shrink-0 bg-white border-r border-gray-200 min-h-screen">
+            <aside className="hidden lg:flex flex-col w-64 shrink-0 bg-white border-r border-gray-200 sticky top-0 h-screen overflow-y-auto">
 
                 {/* Logo */}
                 <div className="px-6 py-6 border-b border-gray-200">

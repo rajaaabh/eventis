@@ -30,7 +30,7 @@ class EvenementFactory extends Factory
             'lieu' => $this->faker->address(),
             'capacite_max' => $this->faker->randomElement([50, 100, 200, 300, 500]),
             'statut' => $this->faker->randomElement(['publie', 'annule']),
-            'image_url' => null,
+            'image' => null,
         ];
     }
 }

@@ -145,8 +145,8 @@ export default function DetailEvenement() {
 
                         {/* Image */}
                         <div className="w-full h-64 sm:h-80 lg:h-96 rounded-2xl overflow-hidden mb-8 relative">
-                            {evenement.image_url ? (
-                                <img src={evenement.image_url} alt={evenement.titre} className="w-full h-full object-cover" />
+                            {evenement.image ? (
+                                <img src={evenement.image} alt={evenement.titre} className="w-full h-full object-cover" />
                             ) : (
                                 <div className="w-full h-full bg-linear-to-br from-red-400 to-red-600 flex items-center justify-center">
                                     <Calendar size={72} className="text-white opacity-40" />
