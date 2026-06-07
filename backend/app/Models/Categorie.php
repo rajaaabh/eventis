@@ -14,10 +14,7 @@ class Categorie extends Model
     protected $table = 'categories';
 
     protected $fillable = [
-        'libelle',
-        'description',
-        'slug',
-        'icone',
+        'libelle'
     ];
 
     protected function casts(): array

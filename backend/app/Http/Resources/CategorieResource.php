@@ -13,11 +13,8 @@ class CategorieResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'id' => $this->id,
-            'libelle' => $this->libelle,
-            'description' => $this->description,
-            'slug' => $this->slug,
-            'icone' => $this->icone,
+            'id'         => $this->id,
+            'libelle'    => $this->libelle,
             'created_at' => $this->created_at->format('d-m-Y H:i'),
             'updated_at' => $this->updated_at->format('d-m-Y H:i'),
         ];
