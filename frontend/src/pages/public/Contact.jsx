@@ -45,9 +45,9 @@ export default function Contact() {
         <div className="min-h-screen bg-gray-50">
             <Navbar />
 
-            <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 py-16 lg:py-24">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24">
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 
                     {/* Colonne gauche — infos */}
                     <div>
@@ -91,7 +91,7 @@ export default function Contact() {
                     </div>
 
                     {/* Colonne droite — formulaire */}
-                    <div className="bg-white border border-gray-200 rounded-2xl p-8">
+                    <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8">
                         <h2 className="text-lg font-black text-gray-900 mb-6">Envoyez-nous un message</h2>
 
                         {success && (

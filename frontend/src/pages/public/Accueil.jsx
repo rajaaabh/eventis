@@ -40,7 +40,7 @@ export default function Accueil() {
             <Navbar />
 
             {/* HERO */}
-            <section className="bg-white py-20 lg:py-32">
+            <section className="bg-white py-12 sm:py-20 lg:py-32">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-8">
                         Vivez des <span className="text-red-500">moments</span><br />inoubliables
@@ -66,9 +66,9 @@ export default function Accueil() {
             </section>
 
             {/* QUI SOMMES NOUS */}
-            <section className="bg-gray-50 py-20 lg:py-28">
-                <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <section className="bg-gray-50 py-12 sm:py-20 lg:py-28">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                         <div className="text-center lg:text-left">
                             <p className="text-xs font-bold uppercase tracking-widest text-red-500 mb-3">Qui sommes-nous</p>
                             <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-8">
@@ -106,7 +106,7 @@ export default function Accueil() {
             </section>
 
             {/* CATEGORIES */}
-            <section className="bg-white py-20 lg:py-28">
+            <section className="bg-white py-12 sm:py-20 lg:py-28">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="mb-10">
                         <p className="text-xs font-bold uppercase tracking-widest text-red-500 mb-3">Parcourir par</p>
@@ -131,7 +131,7 @@ export default function Accueil() {
             </section>
 
             {/* EVENEMENTS A VENIR */}
-            <section className="bg-gray-50 py-20 lg:py-28">
+            <section className="bg-gray-50 py-12 sm:py-20 lg:py-28">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-end justify-between mb-10">
                         <div>
@@ -160,7 +160,7 @@ export default function Accueil() {
             </section>
 
             {/* DERNIERS AJOUTES */}
-            <section className="bg-white py-20 lg:py-28">
+            <section className="bg-white py-12 sm:py-20 lg:py-28">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-end justify-between mb-10">
                         <div>

@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+/* Bloque le débordement horizontal sans casser le header sticky/fixed.*/
+html,
+body {
+  overflow-x: clip;
+}
