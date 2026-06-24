@@ -91,80 +91,72 @@ export default function Contact() {
                     </div>
 
                     {/* Colonne droite — formulaire */}
-                    <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8">
-                        <h2 className="text-lg font-black text-gray-900 mb-6">Envoyez-nous un message</h2>
+                    <div className="bg-gray-900 border border-gray-700 rounded-2xl p-6 sm:p-8">
+                        <h2 className="text-lg font-black text-white mb-6">Envoyez-nous un message</h2>
 
                         {success && (
-                            <div className="mb-6 p-4 rounded-xl bg-green-50 border border-green-200 text-green-700 text-sm">
+                            <div className="mb-6 p-4 rounded-xl bg-green-500/10 border border-green-500/20 text-green-400 text-sm">
                                 Votre message a bien été envoyé. Nous vous répondrons dans les plus brefs délais.
                             </div>
                         )}
 
                         {error && (
-                            <div className="mb-6 p-4 rounded-xl bg-red-50 border border-red-200 text-red-600 text-sm">
+                            <div className="mb-6 p-4 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 text-sm">
                                 {error}
                             </div>
                         )}
 
                         <form onSubmit={handleSubmit} noValidate className="space-y-4">
                             <div>
-                                <label className="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">
-                                    Nom complet
-                                </label>
+                                <label className="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Nom complet</label>
                                 <input
                                     type="text"
                                     value={form.nom}
                                     onChange={(e) => { setForm({ ...form, nom: e.target.value }); setErrors({}) }}
                                     placeholder="Votre nom et prénom"
                                     required
-                                    className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 text-sm text-gray-900 focus:outline-none focus:border-red-400 focus:ring-2 focus:ring-red-100"
+                                    className="w-full px-4 py-3 rounded-xl border border-gray-700 bg-gray-800 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/20"
                                 />
-                                {errors.nom && <p className="text-xs text-red-500 mt-1">{errors.nom[0]}</p>}
+                                {errors.nom && <p className="text-xs text-red-400 mt-1">{errors.nom[0]}</p>}
                             </div>
 
                             <div>
-                                <label className="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">
-                                    Email
-                                </label>
+                                <label className="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Email</label>
                                 <input
                                     type="email"
                                     value={form.email}
                                     onChange={(e) => { setForm({ ...form, email: e.target.value }); setErrors({}) }}
                                     placeholder="Votre adresse email"
                                     required
-                                    className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 text-sm text-gray-900 focus:outline-none focus:border-red-400 focus:ring-2 focus:ring-red-100"
+                                    className="w-full px-4 py-3 rounded-xl border border-gray-700 bg-gray-800 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/20"
                                 />
-                                {errors.email && <p className="text-xs text-red-500 mt-1">{errors.email[0]}</p>}
+                                {errors.email && <p className="text-xs text-red-400 mt-1">{errors.email[0]}</p>}
                             </div>
 
                             <div>
-                                <label className="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">
-                                    Sujet
-                                </label>
+                                <label className="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Sujet</label>
                                 <input
                                     type="text"
                                     value={form.sujet}
                                     onChange={(e) => { setForm({ ...form, sujet: e.target.value }); setErrors({}) }}
                                     placeholder="Objet de votre message"
                                     required
-                                    className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 text-sm text-gray-900 focus:outline-none focus:border-red-400 focus:ring-2 focus:ring-red-100"
+                                    className="w-full px-4 py-3 rounded-xl border border-gray-700 bg-gray-800 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/20"
                                 />
-                                {errors.sujet && <p className="text-xs text-red-500 mt-1">{errors.sujet[0]}</p>}
+                                {errors.sujet && <p className="text-xs text-red-400 mt-1">{errors.sujet[0]}</p>}
                             </div>
 
                             <div>
-                                <label className="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">
-                                    Message
-                                </label>
+                                <label className="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Message</label>
                                 <textarea
                                     value={form.message}
                                     onChange={(e) => { setForm({ ...form, message: e.target.value }); setErrors({}) }}
                                     placeholder="Décrivez votre demande..."
                                     required
                                     rows={5}
-                                    className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 text-sm text-gray-900 focus:outline-none focus:border-red-400 focus:ring-2 focus:ring-red-100 resize-none"
+                                    className="w-full px-4 py-3 rounded-xl border border-gray-700 bg-gray-800 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/20 resize-none"
                                 />
-                                {errors.message && <p className="text-xs text-red-500 mt-1">{errors.message[0]}</p>}
+                                {errors.message && <p className="text-xs text-red-400 mt-1">{errors.message[0]}</p>}
                             </div>
 
                             <button

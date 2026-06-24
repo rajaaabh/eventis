@@ -83,8 +83,11 @@ export default function DetailEvenement() {
         </div>
     )
 
+    const dateDebut = evenement.date_debut || ''
+    const [datePartDebut, heurePartDebut] = dateDebut.split(' ')
+
     return (
-        <div className="min-h-screen bg-gray-50 ">
+        <div className="min-h-screen bg-gray-50">
             <Navbar />
 
             {/* Modal confirmation */}
@@ -105,7 +108,7 @@ export default function DetailEvenement() {
                             </div>
                             <div className="flex justify-between text-sm border-b border-gray-100 pb-2">
                                 <span className="text-gray-400">Date</span>
-                                <span className="font-semibold text-gray-900">{evenement.date_debut?.split(' ')[0]}</span>
+                                <span className="font-semibold text-gray-900">{datePartDebut} {heurePartDebut}</span>
                             </div>
                             <div className="flex justify-between text-sm border-b border-gray-100 pb-2">
                                 <span className="text-gray-400">Lieu</span>
@@ -144,14 +147,8 @@ export default function DetailEvenement() {
                     <div className="lg:col-span-2">
 
                         {/* Image */}
-                        <div className="w-full h-64 sm:h-80 lg:h-96 rounded-2xl overflow-hidden mb-8 relative">
-                            {evenement.image ? (
-                                <img src={evenement.image} alt={evenement.titre} className="w-full h-full object-cover" />
-                            ) : (
-                                <div className="w-full h-full bg-linear-to-br from-red-400 to-red-600 flex items-center justify-center">
-                                    <Calendar size={72} className="text-white opacity-40" />
-                                </div>
-                            )}
+                        <div className="w-full h-64 sm:h-80 lg:h-96 rounded-2xl overflow-hidden mb-8 relative ring-4 ring-white shadow-lg">
+                            <img src={evenement.image} alt={evenement.titre} className="w-full h-full object-cover" />
                             <div className="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-3 py-1.5 rounded-full">
                                 {evenement.categorie?.libelle}
                             </div>
@@ -198,7 +195,9 @@ export default function DetailEvenement() {
                                     </div>
                                     <div>
                                         <div className="text-xs text-gray-400 uppercase tracking-wide mb-0.5">Date de début</div>
-                                        <div className="text-sm font-semibold text-gray-900">{evenement.date_debut?.split(' ')[0]}</div>
+                                        <div className="text-sm font-semibold text-gray-900">
+                                            {datePartDebut} {heurePartDebut && <span className="text-red-500 ">à {heurePartDebut}</span>}
+                                        </div>
                                     </div>
                                 </div>
                                 {evenement.date_fin && (
@@ -208,7 +207,9 @@ export default function DetailEvenement() {
                                         </div>
                                         <div>
                                             <div className="text-xs text-gray-400 uppercase tracking-wide mb-0.5">Date de fin</div>
-                                            <div className="text-sm font-semibold text-gray-900">{evenement.date_fin?.split(' ')[0]}</div>
+                                            <div className="text-sm font-semibold text-gray-900">
+                                                {evenement.date_fin.split(' ')[0]} {evenement.date_fin.split(' ')[1] && <span className="text-red-500 ">à {evenement.date_fin.split(' ')[1]}</span>}
+                                            </div>
                                         </div>
                                     </div>
                                 )}

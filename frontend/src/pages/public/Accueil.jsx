@@ -66,36 +66,36 @@ export default function Accueil() {
             </section>
 
             {/* QUI SOMMES NOUS */}
-            <section className="bg-gray-50 py-12 sm:py-20 lg:py-28">
+            <section className="bg-gray-50 py-24 sm:py-32 lg:py-36">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24 items-center">
                         <div className="text-center lg:text-left">
-                            <p className="text-xs font-bold uppercase tracking-widest text-red-500 mb-3">Qui sommes-nous</p>
-                            <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-8">
+                            <p className="text-xs font-bold uppercase tracking-widest text-red-500 mb-4">Qui sommes-nous</p>
+                            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 mb-10">
                                 La plateforme qui connecte les gens aux événements
                             </h2>
-                            <p className="text-gray-500 text-base leading-relaxed mb-6">
+                            <p className="text-gray-500 text-base lg:text-lg leading-relaxed mb-8">
                                 Éventis est née d'une conviction simple : tout le monde devrait pouvoir découvrir et participer aux événements qui se déroulent près de chez lui, sans friction ni inscription fastidieuse.
                             </p>
-                            <p className="text-gray-500 text-base leading-relaxed">
+                            <p className="text-gray-500 text-base lg:text-lg leading-relaxed">
                                 Notre mission est de mettre en lumière les événements locaux d'Abidjan et de toute la Côte d'Ivoire, qu'ils soient culturels, sportifs, professionnels ou festifs.
                             </p>
                         </div>
-                        <div className="grid grid-cols-2 gap-4">
-                            <div className="bg-red-500 text-white rounded-2xl p-8 col-span-2 text-center lg:text-left">
-                                <div className="text-4xl font-black mb-2">
+                        <div className="grid grid-cols-2 gap-5">
+                            <div className="bg-red-500 text-white rounded-2xl p-10 col-span-2 text-center lg:text-left">
+                                <div className="text-5xl lg:text-6xl font-black mb-3">
                                     {loading ? '...' : `${evenementsAvenir.length > 0 ? '18 000+' : '0'}`}
                                 </div>
-                                <div className="text-red-100 text-sm">Participants inscrits</div>
+                                <div className="text-red-100 text-base">Participants inscrits</div>
                             </div>
-                            <div className="bg-white border border-gray-100 rounded-2xl p-8 text-center lg:text-left">
-                                <div className="text-3xl font-black text-gray-900 mb-2">
+                            <div className="bg-white border border-gray-100 rounded-2xl p-10 text-center lg:text-left">
+                                <div className="text-4xl font-black text-gray-900 mb-3">
                                     {loading ? '...' : evenementsAvenir.length}
                                 </div>
                                 <div className="text-gray-400 text-sm">Événements à venir</div>
                             </div>
-                            <div className="bg-white border border-gray-100 rounded-2xl p-8 text-center lg:text-left">
-                                <div className="text-3xl font-black text-gray-900 mb-2">
+                            <div className="bg-white border border-gray-100 rounded-2xl p-10 text-center lg:text-left">
+                                <div className="text-4xl font-black text-gray-900 mb-3">
                                     {loading ? '...' : categories.length}
                                 </div>
                                 <div className="text-gray-400 text-sm">Catégories</div>
@@ -106,23 +106,23 @@ export default function Accueil() {
             </section>
 
             {/* CATEGORIES */}
-            <section className="bg-white py-12 sm:py-20 lg:py-28">
+            <section className="bg-white py-24 sm:py-32 lg:py-36">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="mb-10">
-                        <p className="text-xs font-bold uppercase tracking-widest text-red-500 mb-3">Parcourir par</p>
-                        <h2 className="text-2xl sm:text-3xl font-black text-gray-900">Catégories</h2>
+                    <div className="mb-14">
+                        <p className="text-xs font-bold uppercase tracking-widest text-red-500 mb-4">Parcourir par</p>
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900">Catégories</h2>
                     </div>
                     {loading ? (
                         <div className="text-center py-10 text-gray-400 text-sm">Chargement...</div>
                     ) : (
-                        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5">
                             {categories.map((cat) => (
                                 <Link
                                     key={cat.id}
                                     to={`/evenements?categorie_id=${cat.id}`}
-                                    className="bg-gray-50 border border-gray-200 rounded-2xl p-6 text-center hover:border-red-300 hover:bg-red-50 transition-all no-underline group"
+                                    className="bg-gray-50 border border-gray-200 rounded-2xl p-8 lg:p-10 text-center hover:border-red-300 hover:bg-red-50 transition-all no-underline group"
                                 >
-                                    <div className="text-sm font-bold text-gray-900 group-hover:text-red-500 transition-colors">{cat.libelle}</div>
+                                    <div className="text-sm lg:text-base font-bold text-gray-900 group-hover:text-red-500 transition-colors">{cat.libelle}</div>
                                 </Link>
                             ))}
                         </div>
