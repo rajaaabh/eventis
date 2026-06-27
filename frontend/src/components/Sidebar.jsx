@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import { LayoutDashboard, Calendar, Tag, Users, FileText, LogOut, MapPin, Menu, X } from 'lucide-react'
+import { LayoutDashboard, Calendar, Tag, Users, FileText, LogOut, MapPin, Menu, X, ExternalLink } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
 import { logout as logoutApi } from '../api/auth'
 import logoFondBlanc from '../assets/logofondblanc.png'
@@ -68,6 +68,20 @@ export default function Sidebar() {
                                 ))}
                             </div>
 
+                            {/* Lien site public mobile */}
+                            <div className="border-t border-white/10 px-3 pt-2">
+                                <Link
+                                    to="/"
+                                    target="_blank"
+                                    onClick={() => setOpen(false)}
+                                    className="flex items-center gap-3 px-4 py-3 rounded-xl text-sm text-white/60 hover:bg-white/5 hover:text-white no-underline transition-all"
+                                >
+                                    <ExternalLink size={16} />
+                                    Voir le site public
+                                </Link>
+                            </div>
+
+                            {/* Déconnexion mobile */}
                             <div className="border-t border-white/10 px-3 py-2">
                                 <button
                                     onClick={() => { handleLogout(); setOpen(false) }}
@@ -113,6 +127,18 @@ export default function Sidebar() {
                             {label}
                         </Link>
                     ))}
+                </div>
+
+                {/* Lien site public desktop */}
+                <div className="px-4 py-3 border-t border-gray-200">
+                    <Link
+                        to="/"
+                        target="_blank"
+                        className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-50 transition-all no-underline"
+                    >
+                        <ExternalLink size={16} className="shrink-0" />
+                        Allez à eventis 
+                    </Link>
                 </div>
 
                 {/* Déconnexion */}
