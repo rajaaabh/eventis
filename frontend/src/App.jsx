@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { AuthProvider } from './context/AuthContext'
 import ProtectedRoute from './components/ProtectedRoute'
+import ScrollToTop from './components/ScrollToTop'
 
 // Pages publiques
 import Accueil from './pages/public/Accueil'
@@ -27,6 +28,7 @@ import InscriptionDetail from './pages/admin/InscriptionDetail'
 export default function App() {
     return (
         <BrowserRouter>
+            <ScrollToTop />
             <AuthProvider>
                 <Routes>
                     {/* Routes publiques */}
