@@ -4,20 +4,34 @@ RUN apk add --no-cache \
     curl \
     unzip \
     git \
+    $PHPIZE_DEPS \
+    linux-headers \
     oniguruma-dev \
     openssl-dev \
     libxml2-dev \
     icu-dev \
     libzip-dev \
+    libpng-dev \
+    libjpeg-turbo-dev \
+    freetype-dev \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install -j$(nproc) \
         pdo_mysql \
         mbstring \
         intl \
         zip \
         bcmath \
-        opcache
+        opcache \
+        gd \
+    && pecl install xdebug \
+    && docker-php-ext-enable xdebug
 
 RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
+
+# Configuration Xdebug — couverture de code pour PHPUnit uniquement
+RUN { \
+        echo "xdebug.mode=coverage"; \
+    } > /usr/local/etc/php/conf.d/xdebug.ini
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
