@@ -61,6 +61,9 @@ else
     php artisan route:clear
     php artisan view:clear
 
+    echo ">>> Démarrage de PHP-FPM..."
+    exec "$@"
+
 fi
 
 echo ">>> Démarrage de PHP-FPM en arrière-plan..."
