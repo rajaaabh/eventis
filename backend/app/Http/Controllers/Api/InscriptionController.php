@@ -90,7 +90,7 @@ class InscriptionController extends Controller
             ['token_desinscription' => Str::uuid()]
         ));
 
-        Mail::to($inscription->email_participant)->send(new InscriptionConfirmationMail($inscription->load('evenement')));
+        //Mail::to($inscription->email_participant)->send(new InscriptionConfirmationMail($inscription->load('evenement')));
 
         return response()->json([
             'success' => true,

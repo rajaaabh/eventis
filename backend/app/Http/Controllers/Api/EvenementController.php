@@ -180,7 +180,7 @@ class EvenementController extends Controller
         $evenement->update(['statut' => 'annule']);
 
         $evenement->inscriptions->each(function ($inscription) use ($evenement) {
-            Mail::to($inscription->email_participant)->send(new EvenementAnnuleMail($evenement, $inscription));
+            //Mail::to($inscription->email_participant)->send(new EvenementAnnuleMail($evenement, $inscription));
         });
 
         return response()->json([

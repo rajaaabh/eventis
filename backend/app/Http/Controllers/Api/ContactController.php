@@ -14,7 +14,7 @@ class ContactController extends Controller
      */
     public function store(StoreContactRequest $request)
     {
-        Mail::to(config('mail.from.address'))->send(new ContactMail($request->validated()));
+        //Mail::to(config('mail.from.address'))->send(new ContactMail($request->validated()));
 
         return response()->json([
             'success' => true,
