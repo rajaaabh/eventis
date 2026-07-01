@@ -28,6 +28,15 @@ if [ "$APP_ENV" = "production" ]; then
     echo ">>> [PROD] Création du lien storage..."
     php artisan storage:link
 
+    echo ">>> Démarrage de PHP-FPM en arrière-plan..."
+    php-fpm -D
+
+    echo ">>> Injection du port dans la config Nginx..."
+    envsubst '${PORT}' < /etc/nginx/nginx.conf.template > /etc/nginx/nginx.conf
+
+    echo ">>> Démarrage de Nginx..."
+    exec nginx -g "daemon off;"
+
 else
 
     echo ">>> [DEV] Lancement en mode développement..."
@@ -65,12 +74,3 @@ else
     exec "$@"
 
 fi
-
-echo ">>> Démarrage de PHP-FPM en arrière-plan..."
-php-fpm -D
-
-echo ">>> Injection du port dans la config Nginx..."
-envsubst '${PORT}' < /etc/nginx/nginx.conf.template > /etc/nginx/nginx.conf
-
-echo ">>> Démarrage de Nginx..."
-exec nginx -g "daemon off;"
