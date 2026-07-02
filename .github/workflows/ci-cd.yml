@@ -70,10 +70,10 @@ jobs:
     needs: tests
 
     steps:
+      - name: Install Railway CLI
+        run: npm install -g @railway/cli
+
       - name: Deploy backend
-        run: |
-          curl -X POST \
-            -H "Authorization: Bearer ${{ secrets.RAILWAY_TOKEN }}" \
-            -H "Content-Type: application/json" \
-            -d '{"serviceId": "0700b3bd-a96f-4235-b7d0-eb079f408593", "environmentId": "3b7340c5-680f-414c-a122-5bdf839bc0ea"}' \
-            https://backboard.railway.app/graphql/v2
+        run: railway redeploy --service 0700b3bd-a96f-4235-b7d0-eb079f408593 --environment 3b7340c5-680f-414c-a122-5bdf839bc0ea --yes
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
