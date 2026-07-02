@@ -77,3 +77,8 @@ jobs:
         run: railway redeploy --service 0700b3bd-a96f-4235-b7d0-eb079f408593 --environment 3b7340c5-680f-414c-a122-5bdf839bc0ea --yes
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+
+      - name: Deploy frontend
+        run: railway redeploy --service 3b29ea76-a1f7-4cac-8967-d23698f6f259 --environment 3b7340c5-680f-414c-a122-5bdf839bc0ea --yes
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
