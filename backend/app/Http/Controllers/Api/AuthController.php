@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Http\Controllers\Api;
-
 use App\Http\Controllers\Controller;
 use App\Http\Requests\AuthLoginRequest;
 use App\Models\User;
@@ -21,10 +19,8 @@ class AuthController extends Controller
                 'message' => 'Email ou mot de passe incorrect',
             ], 401);
         }
-
         $user = User::where('email', $request->email)->firstOrFail();
         $token = $user->createToken('auth_token')->plainTextToken;
-
         return response()->json([
             'success' => true,
             'message' => 'Connexion réussie',
@@ -39,11 +35,9 @@ class AuthController extends Controller
     public function logout(Request $request)
     {
         $token = $request->user()->currentAccessToken();
-
         if ($token) {
             $token->delete();
         }
-
         return response()->json([
             'success' => true,
             'message' => 'Déconnexion réussie',
