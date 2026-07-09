@@ -11,6 +11,7 @@ use App\Models\Inscription;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Log;
 
 class InscriptionController extends Controller
 {
@@ -92,7 +93,13 @@ class InscriptionController extends Controller
 
         try {
             Mail::to($inscription->email_participant)->send(new InscriptionConfirmationMail($inscription->load('evenement')));
-        } catch (\Exception) {}
+        } catch (\Exception $e) {
+    Log::error('Erreur envoi email annulation', [
+        'message' => $e->getMessage(),
+        'evenement_id' => $evenement->id ?? null,
+    ]);
+
+}
 
         return response()->json([
             'success' => true,
