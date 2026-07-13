@@ -1,0 +1,6358 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.72.0"
+  },
+  "ReportID": "019f5910-050a-777b-bde9-b8fa1df15c30",
+  "CreatedAt": "2026-07-13T01:20:49.9304903Z",
+  "ArtifactName": ".",
+  "ArtifactType": "filesystem",
+  "Results": [
+    {
+      "Target": "eventis/backend/composer.lock",
+      "Class": "lang-pkgs",
+      "Type": "composer",
+      "Packages": [
+        {
+          "ID": "guzzlehttp/guzzle@7.12.1",
+          "Name": "guzzlehttp/guzzle",
+          "Identifier": {
+            "PURL": "pkg:composer/guzzlehttp/guzzle@7.12.1",
+            "UID": "4f05581cfdc011d9"
+          },
+          "Version": "7.12.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "guzzlehttp/promises@2.5.0",
+            "guzzlehttp/psr7@2.12.4",
+            "psr/http-client@1.0.3",
+            "symfony/deprecation-contracts@v3.7.1",
+            "symfony/polyfill-php80@v1.37.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 710,
+              "EndLine": 837
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "guzzlehttp/promises@2.5.0",
+          "Name": "guzzlehttp/promises",
+          "Identifier": {
+            "PURL": "pkg:composer/guzzlehttp/promises@2.5.0",
+            "UID": "1fc56f0b879f4b34"
+          },
+          "Version": "2.5.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "symfony/deprecation-contracts@v3.7.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 838,
+              "EndLine": 921
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "laravel/framework@v13.12.0",
+          "Name": "laravel/framework",
+          "Identifier": {
+            "PURL": "pkg:composer/laravel/framework@v13.12.0",
+            "UID": "dd94db144bdc2554"
+          },
+          "Version": "v13.12.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "brick/math@0.14.8",
+            "doctrine/inflector@2.1.0",
+            "dragonmantank/cron-expression@v3.6.0",
+            "egulias/email-validator@4.0.4",
+            "fruitcake/php-cors@v1.4.0",
+            "guzzlehttp/guzzle@7.12.1",
+            "guzzlehttp/promises@2.5.0",
+            "guzzlehttp/uri-template@v1.0.6",
+            "laravel/prompts@v0.3.18",
+            "laravel/serializable-closure@v2.0.13",
+            "league/commonmark@2.8.2",
+            "league/flysystem-local@3.31.0",
+            "league/flysystem@3.34.0",
+            "league/uri@7.8.1",
+            "monolog/monolog@3.10.0",
+            "nesbot/carbon@3.11.4",
+            "nunomaduro/termwind@v2.4.0",
+            "psr/container@2.0.2",
+            "psr/log@3.0.2",
+            "psr/simple-cache@3.0.0",
+            "ramsey/uuid@4.9.2",
+            "symfony/console@v8.1.0",
+            "symfony/error-handler@v8.1.0",
+            "symfony/finder@v8.1.0",
+            "symfony/http-foundation@v8.1.0",
+            "symfony/http-kernel@v8.1.0",
+            "symfony/mailer@v8.1.0",
+            "symfony/mime@v8.1.0",
+            "symfony/polyfill-php84@v1.38.1",
+            "symfony/polyfill-php85@v1.38.1",
+            "symfony/polyfill-php86@v1.38.0",
+            "symfony/process@v8.1.0",
+            "symfony/routing@v8.1.0",
+            "symfony/uid@v8.1.0",
+            "symfony/var-dumper@v8.1.0",
+            "tijsverkoyen/css-to-inline-styles@v2.4.0",
+            "vlucas/phpdotenv@v5.6.3",
+            "voku/portable-ascii@2.1.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1187,
+              "EndLine": 1410
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "laravel/sanctum@v4.3.2",
+          "Name": "laravel/sanctum",
+          "Identifier": {
+            "PURL": "pkg:composer/laravel/sanctum@v4.3.2",
+            "UID": "8e2d1e4e3e2894de"
+          },
+          "Version": "v4.3.2",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "symfony/console@v8.1.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1470,
+              "EndLine": 1532
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "laravel/tinker@v3.0.2",
+          "Name": "laravel/tinker",
+          "Identifier": {
+            "PURL": "pkg:composer/laravel/tinker@v3.0.2",
+            "UID": "ae0578af58a4f33c"
+          },
+          "Version": "v3.0.2",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "psy/psysh@v0.12.23",
+            "symfony/var-dumper@v8.1.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1594,
+              "EndLine": 1662
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "railsware/mailtrap-php@3.12.0",
+          "Name": "railsware/mailtrap-php",
+          "Identifier": {
+            "PURL": "pkg:composer/railsware/mailtrap-php@3.12.0",
+            "UID": "a518cf7476576669"
+          },
+          "Version": "3.12.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "egulias/email-validator@4.0.4",
+            "php-http/client-common@2.7.3",
+            "php-http/discovery@1.20.0",
+            "php-http/httplug@2.4.1",
+            "psr/http-factory@1.1.0",
+            "psr/http-message@2.0",
+            "symfony/mime@v8.1.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3701,
+              "EndLine": 3774
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "resend/resend-laravel@v1.4.0",
+          "Name": "resend/resend-laravel",
+          "Identifier": {
+            "PURL": "pkg:composer/resend/resend-laravel@v1.4.0",
+            "UID": "ebdb96670b9e5ff1"
+          },
+          "Version": "v1.4.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "resend/resend-php@v1.4.0",
+            "symfony/mailer@v8.1.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3973,
+              "EndLine": 4041
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "sentry/sentry-laravel@4.26.0",
+          "Name": "sentry/sentry-laravel",
+          "Identifier": {
+            "PURL": "pkg:composer/sentry/sentry-laravel@4.26.0",
+            "UID": "2156fa46a7049bca"
+          },
+          "Version": "4.26.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "nyholm/psr7@1.8.2",
+            "sentry/sentry@4.29.0",
+            "symfony/psr-http-message-bridge@v8.1.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 4193,
+              "EndLine": 4283
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "brick/math@0.14.8",
+          "Name": "brick/math",
+          "Identifier": {
+            "PURL": "pkg:composer/brick/math@0.14.8",
+            "UID": "6f7f4a35462e6e6"
+          },
+          "Version": "0.14.8",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 9,
+              "EndLine": 68
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "carbonphp/carbon-doctrine-types@3.2.0",
+          "Name": "carbonphp/carbon-doctrine-types",
+          "Identifier": {
+            "PURL": "pkg:composer/carbonphp/carbon-doctrine-types@3.2.0",
+            "UID": "134c690a8a7cbb6"
+          },
+          "Version": "3.2.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 69,
+              "EndLine": 137
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "clue/stream-filter@v1.7.0",
+          "Name": "clue/stream-filter",
+          "Identifier": {
+            "PURL": "pkg:composer/clue/stream-filter@v1.7.0",
+            "UID": "4666de1dc461ee1e"
+          },
+          "Version": "v1.7.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 138,
+              "EndLine": 203
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "dflydev/dot-access-data@v3.0.3",
+          "Name": "dflydev/dot-access-data",
+          "Identifier": {
+            "PURL": "pkg:composer/dflydev/dot-access-data@v3.0.3",
+            "UID": "8e7dd0722813485a"
+          },
+          "Version": "v3.0.3",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 204,
+              "EndLine": 278
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "doctrine/inflector@2.1.0",
+          "Name": "doctrine/inflector",
+          "Identifier": {
+            "PURL": "pkg:composer/doctrine/inflector@2.1.0",
+            "UID": "300f18e69a728a0"
+          },
+          "Version": "2.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 279,
+              "EndLine": 368
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "doctrine/lexer@3.0.1",
+          "Name": "doctrine/lexer",
+          "Identifier": {
+            "PURL": "pkg:composer/doctrine/lexer@3.0.1",
+            "UID": "b763060d76138fa3"
+          },
+          "Version": "3.0.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 369,
+              "EndLine": 445
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "dragonmantank/cron-expression@v3.6.0",
+          "Name": "dragonmantank/cron-expression",
+          "Identifier": {
+            "PURL": "pkg:composer/dragonmantank/cron-expression@v3.6.0",
+            "UID": "478f62448df84f02"
+          },
+          "Version": "v3.6.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 446,
+              "EndLine": 509
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "egulias/email-validator@4.0.4",
+          "Name": "egulias/email-validator",
+          "Identifier": {
+            "PURL": "pkg:composer/egulias/email-validator@4.0.4",
+            "UID": "2e80b55d9654d381"
+          },
+          "Version": "4.0.4",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "doctrine/lexer@3.0.1",
+            "symfony/polyfill-intl-idn@v1.38.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 510,
+              "EndLine": 576
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "fruitcake/php-cors@v1.4.0",
+          "Name": "fruitcake/php-cors",
+          "Identifier": {
+            "PURL": "pkg:composer/fruitcake/php-cors@v1.4.0",
+            "UID": "3bb136b34c44a5b9"
+          },
+          "Version": "v1.4.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/http-foundation@v8.1.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 577,
+              "EndLine": 647
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "graham-campbell/result-type@v1.1.4",
+          "Name": "graham-campbell/result-type",
+          "Identifier": {
+            "PURL": "pkg:composer/graham-campbell/result-type@v1.1.4",
+            "UID": "bfdb4914ff81ba02"
+          },
+          "Version": "v1.1.4",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "phpoption/phpoption@1.9.5"
+          ],
+          "Locations": [
+            {
+              "StartLine": 648,
+              "EndLine": 709
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "guzzlehttp/psr7@2.12.4",
+          "Name": "guzzlehttp/psr7",
+          "Identifier": {
+            "PURL": "pkg:composer/guzzlehttp/psr7@2.12.4",
+            "UID": "1121a5f6d5a554fd"
+          },
+          "Version": "2.12.4",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "psr/http-factory@1.1.0",
+            "psr/http-message@2.0",
+            "ralouphie/getallheaders@3.0.3",
+            "symfony/deprecation-contracts@v3.7.1",
+            "symfony/polyfill-php80@v1.37.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 922,
+              "EndLine": 1040
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "guzzlehttp/uri-template@v1.0.6",
+          "Name": "guzzlehttp/uri-template",
+          "Identifier": {
+            "PURL": "pkg:composer/guzzlehttp/uri-template@v1.0.6",
+            "UID": "1bbafd2a850515e1"
+          },
+          "Version": "v1.0.6",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/polyfill-php80@v1.37.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1041,
+              "EndLine": 1126
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "jean85/pretty-package-versions@2.1.1",
+          "Name": "jean85/pretty-package-versions",
+          "Identifier": {
+            "PURL": "pkg:composer/jean85/pretty-package-versions@2.1.1",
+            "UID": "9d413a0316c3b454"
+          },
+          "Version": "2.1.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1127,
+              "EndLine": 1186
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "laravel/prompts@v0.3.18",
+          "Name": "laravel/prompts",
+          "Identifier": {
+            "PURL": "pkg:composer/laravel/prompts@v0.3.18",
+            "UID": "932491c6e11d4f39"
+          },
+          "Version": "v0.3.18",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/console@v8.1.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1411,
+              "EndLine": 1469
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "laravel/serializable-closure@v2.0.13",
+          "Name": "laravel/serializable-closure",
+          "Identifier": {
+            "PURL": "pkg:composer/laravel/serializable-closure@v2.0.13",
+            "UID": "7b99357a41294ae3"
+          },
+          "Version": "v2.0.13",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1533,
+              "EndLine": 1593
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "league/commonmark@2.8.2",
+          "Name": "league/commonmark",
+          "Identifier": {
+            "PURL": "pkg:composer/league/commonmark@2.8.2",
+            "UID": "21a7191de03d3356"
+          },
+          "Version": "2.8.2",
+          "Licenses": [
+            "BSD-3-Clause"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "league/config@v1.2.0",
+            "psr/event-dispatcher@1.0.0",
+            "symfony/deprecation-contracts@v3.7.1",
+            "symfony/polyfill-php80@v1.37.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1663,
+              "EndLine": 1769
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "league/config@v1.2.0",
+          "Name": "league/config",
+          "Identifier": {
+            "PURL": "pkg:composer/league/config@v1.2.0",
+            "UID": "a25b2859e533deee"
+          },
+          "Version": "v1.2.0",
+          "Licenses": [
+            "BSD-3-Clause"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "dflydev/dot-access-data@v3.0.3",
+            "nette/schema@v1.3.5"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1770,
+              "EndLine": 1851
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "league/flysystem@3.34.0",
+          "Name": "league/flysystem",
+          "Identifier": {
+            "PURL": "pkg:composer/league/flysystem@3.34.0",
+            "UID": "63ea7218c43c900f"
+          },
+          "Version": "3.34.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "league/flysystem-local@3.31.0",
+            "league/mime-type-detection@1.16.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1852,
+              "EndLine": 1934
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "league/flysystem-local@3.31.0",
+          "Name": "league/flysystem-local",
+          "Identifier": {
+            "PURL": "pkg:composer/league/flysystem-local@3.31.0",
+            "UID": "58073c43ddc813a9"
+          },
+          "Version": "3.31.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "league/flysystem@3.34.0",
+            "league/mime-type-detection@1.16.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1935,
+              "EndLine": 1983
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "league/mime-type-detection@1.16.0",
+          "Name": "league/mime-type-detection",
+          "Identifier": {
+            "PURL": "pkg:composer/league/mime-type-detection@1.16.0",
+            "UID": "a211df04d4d15f9e"
+          },
+          "Version": "1.16.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1984,
+              "EndLine": 2039
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "league/uri@7.8.1",
+          "Name": "league/uri",
+          "Identifier": {
+            "PURL": "pkg:composer/league/uri@7.8.1",
+            "UID": "d1a193b8da290412"
+          },
+          "Version": "7.8.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "league/uri-interfaces@7.8.1",
+            "psr/http-factory@1.1.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2040,
+              "EndLine": 2137
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "league/uri-interfaces@7.8.1",
+          "Name": "league/uri-interfaces",
+          "Identifier": {
+            "PURL": "pkg:composer/league/uri-interfaces@7.8.1",
+            "UID": "79c15e97142c4e34"
+          },
+          "Version": "7.8.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "psr/http-message@2.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2138,
+              "EndLine": 2221
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "monolog/monolog@3.10.0",
+          "Name": "monolog/monolog",
+          "Identifier": {
+            "PURL": "pkg:composer/monolog/monolog@3.10.0",
+            "UID": "13426c2e9c3fb6df"
+          },
+          "Version": "3.10.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "psr/log@3.0.2"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2222,
+              "EndLine": 2324
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "nesbot/carbon@3.11.4",
+          "Name": "nesbot/carbon",
+          "Identifier": {
+            "PURL": "pkg:composer/nesbot/carbon@3.11.4",
+            "UID": "29d607ae2eaa4acb"
+          },
+          "Version": "3.11.4",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "carbonphp/carbon-doctrine-types@3.2.0",
+            "psr/clock@1.0.0",
+            "symfony/clock@v8.1.0",
+            "symfony/polyfill-mbstring@v1.38.1",
+            "symfony/translation@v8.1.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2325,
+              "EndLine": 2429
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "nette/schema@v1.3.5",
+          "Name": "nette/schema",
+          "Identifier": {
+            "PURL": "pkg:composer/nette/schema@v1.3.5",
+            "UID": "4e8664a1267ea644"
+          },
+          "Version": "v1.3.5",
+          "Licenses": [
+            "BSD-3-Clause",
+            "GPL-2.0-only",
+            "GPL-3.0-only"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "nette/utils@v4.1.4"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2430,
+              "EndLine": 2496
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "nette/utils@v4.1.4",
+          "Name": "nette/utils",
+          "Identifier": {
+            "PURL": "pkg:composer/nette/utils@v4.1.4",
+            "UID": "a1ce8f4112dcf6a2"
+          },
+          "Version": "v4.1.4",
+          "Licenses": [
+            "BSD-3-Clause",
+            "GPL-2.0-only",
+            "GPL-3.0-only"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 2497,
+              "EndLine": 2587
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "nikic/php-parser@v5.7.0",
+          "Name": "nikic/php-parser",
+          "Identifier": {
+            "PURL": "pkg:composer/nikic/php-parser@v5.7.0",
+            "UID": "3e076205b0dbf67c"
+          },
+          "Version": "v5.7.0",
+          "Licenses": [
+            "BSD-3-Clause"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 2588,
+              "EndLine": 2645
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "nunomaduro/termwind@v2.4.0",
+          "Name": "nunomaduro/termwind",
+          "Identifier": {
+            "PURL": "pkg:composer/nunomaduro/termwind@v2.4.0",
+            "UID": "711af352b4225b84"
+          },
+          "Version": "v2.4.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/console@v8.1.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2646,
+              "EndLine": 2732
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "nyholm/psr7@1.8.2",
+          "Name": "nyholm/psr7",
+          "Identifier": {
+            "PURL": "pkg:composer/nyholm/psr7@1.8.2",
+            "UID": "e00d64033ff1a691"
+          },
+          "Version": "1.8.2",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "psr/http-factory@1.1.0",
+            "psr/http-message@2.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2733,
+              "EndLine": 2810
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "php-http/client-common@2.7.3",
+          "Name": "php-http/client-common",
+          "Identifier": {
+            "PURL": "pkg:composer/php-http/client-common@2.7.3",
+            "UID": "d796fe65fda809bb"
+          },
+          "Version": "2.7.3",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "php-http/httplug@2.4.1",
+            "php-http/message@1.16.2",
+            "psr/http-client@1.0.3",
+            "psr/http-factory@1.1.0",
+            "psr/http-message@2.0",
+            "symfony/options-resolver@v8.1.0",
+            "symfony/polyfill-php80@v1.37.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2811,
+              "EndLine": 2877
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "php-http/discovery@1.20.0",
+          "Name": "php-http/discovery",
+          "Identifier": {
+            "PURL": "pkg:composer/php-http/discovery@1.20.0",
+            "UID": "42e7bf8e2a4e761f"
+          },
+          "Version": "1.20.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 2878,
+              "EndLine": 2956
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "php-http/httplug@2.4.1",
+          "Name": "php-http/httplug",
+          "Identifier": {
+            "PURL": "pkg:composer/php-http/httplug@2.4.1",
+            "UID": "fa7ad9d2bfe2907b"
+          },
+          "Version": "2.4.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "php-http/promise@1.3.1",
+            "psr/http-client@1.0.3",
+            "psr/http-message@2.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2957,
+              "EndLine": 3013
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "php-http/message@1.16.2",
+          "Name": "php-http/message",
+          "Identifier": {
+            "PURL": "pkg:composer/php-http/message@1.16.2",
+            "UID": "1460de9d79df1194"
+          },
+          "Version": "1.16.2",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "clue/stream-filter@v1.7.0",
+            "psr/http-message@2.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3014,
+              "EndLine": 3082
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "php-http/promise@1.3.1",
+          "Name": "php-http/promise",
+          "Identifier": {
+            "PURL": "pkg:composer/php-http/promise@1.3.1",
+            "UID": "f5f6d9274fb830ab"
+          },
+          "Version": "1.3.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3083,
+              "EndLine": 3134
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "phpoption/phpoption@1.9.5",
+          "Name": "phpoption/phpoption",
+          "Identifier": {
+            "PURL": "pkg:composer/phpoption/phpoption@1.9.5",
+            "UID": "85c7fdcb57e7e436"
+          },
+          "Version": "1.9.5",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3135,
+              "EndLine": 3209
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "psr/clock@1.0.0",
+          "Name": "psr/clock",
+          "Identifier": {
+            "PURL": "pkg:composer/psr/clock@1.0.0",
+            "UID": "f230d49245409ba8"
+          },
+          "Version": "1.0.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3210,
+              "EndLine": 3257
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "psr/container@2.0.2",
+          "Name": "psr/container",
+          "Identifier": {
+            "PURL": "pkg:composer/psr/container@2.0.2",
+            "UID": "a33aba36c295f853"
+          },
+          "Version": "2.0.2",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3258,
+              "EndLine": 3310
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "psr/event-dispatcher@1.0.0",
+          "Name": "psr/event-dispatcher",
+          "Identifier": {
+            "PURL": "pkg:composer/psr/event-dispatcher@1.0.0",
+            "UID": "ffbea751f098674f"
+          },
+          "Version": "1.0.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3311,
+              "EndLine": 3360
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "psr/http-client@1.0.3",
+          "Name": "psr/http-client",
+          "Identifier": {
+            "PURL": "pkg:composer/psr/http-client@1.0.3",
+            "UID": "7feebcba25d817dd"
+          },
+          "Version": "1.0.3",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "psr/http-message@2.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3361,
+              "EndLine": 3412
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "psr/http-factory@1.1.0",
+          "Name": "psr/http-factory",
+          "Identifier": {
+            "PURL": "pkg:composer/psr/http-factory@1.1.0",
+            "UID": "eb528f362d8f90e4"
+          },
+          "Version": "1.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "psr/http-message@2.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3413,
+              "EndLine": 3467
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "psr/http-message@2.0",
+          "Name": "psr/http-message",
+          "Identifier": {
+            "PURL": "pkg:composer/psr/http-message@2.0",
+            "UID": "244510d51049e151"
+          },
+          "Version": "2.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3468,
+              "EndLine": 3520
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "psr/log@3.0.2",
+          "Name": "psr/log",
+          "Identifier": {
+            "PURL": "pkg:composer/psr/log@3.0.2",
+            "UID": "a208c1566e683888"
+          },
+          "Version": "3.0.2",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3521,
+              "EndLine": 3570
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "psr/simple-cache@3.0.0",
+          "Name": "psr/simple-cache",
+          "Identifier": {
+            "PURL": "pkg:composer/psr/simple-cache@3.0.0",
+            "UID": "9b3a464b1b37f834"
+          },
+          "Version": "3.0.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3571,
+              "EndLine": 3621
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "psy/psysh@v0.12.23",
+          "Name": "psy/psysh",
+          "Identifier": {
+            "PURL": "pkg:composer/psy/psysh@v0.12.23",
+            "UID": "5cb48ce0f5bd9cab"
+          },
+          "Version": "v0.12.23",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "nikic/php-parser@v5.7.0",
+            "symfony/console@v8.1.0",
+            "symfony/var-dumper@v8.1.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3622,
+              "EndLine": 3700
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "ralouphie/getallheaders@3.0.3",
+          "Name": "ralouphie/getallheaders",
+          "Identifier": {
+            "PURL": "pkg:composer/ralouphie/getallheaders@3.0.3",
+            "UID": "d1dffb6cde6b8e98"
+          },
+          "Version": "3.0.3",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3775,
+              "EndLine": 3818
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "ramsey/collection@2.1.1",
+          "Name": "ramsey/collection",
+          "Identifier": {
+            "PURL": "pkg:composer/ramsey/collection@2.1.1",
+            "UID": "1b13f7cab8e06001"
+          },
+          "Version": "2.1.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3819,
+              "EndLine": 3894
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "ramsey/uuid@4.9.2",
+          "Name": "ramsey/uuid",
+          "Identifier": {
+            "PURL": "pkg:composer/ramsey/uuid@4.9.2",
+            "UID": "b9b17c709b3474b6"
+          },
+          "Version": "4.9.2",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "brick/math@0.14.8",
+            "ramsey/collection@2.1.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3895,
+              "EndLine": 3972
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "resend/resend-php@v1.4.0",
+          "Name": "resend/resend-php",
+          "Identifier": {
+            "PURL": "pkg:composer/resend/resend-php@v1.4.0",
+            "UID": "2f830ca63e412d6f"
+          },
+          "Version": "v1.4.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "guzzlehttp/guzzle@7.12.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 4042,
+              "EndLine": 4098
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "sentry/sentry@4.29.0",
+          "Name": "sentry/sentry",
+          "Identifier": {
+            "PURL": "pkg:composer/sentry/sentry@4.29.0",
+            "UID": "1c5c33e4eebb3677"
+          },
+          "Version": "4.29.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "guzzlehttp/psr7@2.12.4",
+            "jean85/pretty-package-versions@2.1.1",
+            "psr/log@3.0.2",
+            "symfony/options-resolver@v8.1.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 4099,
+              "EndLine": 4192
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/clock@v8.1.0",
+          "Name": "symfony/clock",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/clock@v8.1.0",
+            "UID": "d6204d15480459e4"
+          },
+          "Version": "v8.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "psr/clock@1.0.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 4284,
+              "EndLine": 4360
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/console@v8.1.0",
+          "Name": "symfony/console",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/console@v8.1.0",
+            "UID": "508800073053f2f"
+          },
+          "Version": "v8.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/deprecation-contracts@v3.7.1",
+            "symfony/polyfill-mbstring@v1.38.1",
+            "symfony/polyfill-php85@v1.38.1",
+            "symfony/service-contracts@v3.7.0",
+            "symfony/string@v8.1.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 4361,
+              "EndLine": 4460
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/css-selector@v8.1.0",
+          "Name": "symfony/css-selector",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/css-selector@v8.1.0",
+            "UID": "63b8e77f1ebcfc76"
+          },
+          "Version": "v8.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 4461,
+              "EndLine": 4529
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/deprecation-contracts@v3.7.1",
+          "Name": "symfony/deprecation-contracts",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/deprecation-contracts@v3.7.1",
+            "UID": "19a93ea5d2194897"
+          },
+          "Version": "v3.7.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 4530,
+              "EndLine": 4600
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/error-handler@v8.1.0",
+          "Name": "symfony/error-handler",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/error-handler@v8.1.0",
+            "UID": "3e5259986d09c948"
+          },
+          "Version": "v8.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "psr/log@3.0.2",
+            "symfony/polyfill-php85@v1.38.1",
+            "symfony/var-dumper@v8.1.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 4601,
+              "EndLine": 4681
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/event-dispatcher@v8.1.0",
+          "Name": "symfony/event-dispatcher",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/event-dispatcher@v8.1.0",
+            "UID": "e215b8878595bcb1"
+          },
+          "Version": "v8.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/deprecation-contracts@v3.7.1",
+            "symfony/event-dispatcher-contracts@v3.7.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 4682,
+              "EndLine": 4767
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/event-dispatcher-contracts@v3.7.0",
+          "Name": "symfony/event-dispatcher-contracts",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/event-dispatcher-contracts@v3.7.0",
+            "UID": "1e22aaed1f9684dc"
+          },
+          "Version": "v3.7.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "psr/event-dispatcher@1.0.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 4768,
+              "EndLine": 4847
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/finder@v8.1.0",
+          "Name": "symfony/finder",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/finder@v8.1.0",
+            "UID": "67c8c5c6fdd41ad1"
+          },
+          "Version": "v8.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 4848,
+              "EndLine": 4915
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/http-foundation@v8.1.0",
+          "Name": "symfony/http-foundation",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/http-foundation@v8.1.0",
+            "UID": "e946e08e26c7e354"
+          },
+          "Version": "v8.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/deprecation-contracts@v3.7.1",
+            "symfony/polyfill-mbstring@v1.38.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 4916,
+              "EndLine": 4996
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/http-kernel@v8.1.0",
+          "Name": "symfony/http-kernel",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/http-kernel@v8.1.0",
+            "UID": "b5d61bf7c173429b"
+          },
+          "Version": "v8.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "psr/log@3.0.2",
+            "symfony/deprecation-contracts@v3.7.1",
+            "symfony/error-handler@v8.1.0",
+            "symfony/event-dispatcher@v8.1.0",
+            "symfony/http-foundation@v8.1.0",
+            "symfony/polyfill-ctype@v1.37.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 4997,
+              "EndLine": 5105
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/mailer@v8.1.0",
+          "Name": "symfony/mailer",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/mailer@v8.1.0",
+            "UID": "b45bf3d636e9f059"
+          },
+          "Version": "v8.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "egulias/email-validator@4.0.4",
+            "psr/event-dispatcher@1.0.0",
+            "psr/log@3.0.2",
+            "symfony/event-dispatcher@v8.1.0",
+            "symfony/mime@v8.1.0",
+            "symfony/service-contracts@v3.7.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 5106,
+              "EndLine": 5185
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/mime@v8.1.0",
+          "Name": "symfony/mime",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/mime@v8.1.0",
+            "UID": "5efa7bf1ea56d0ba"
+          },
+          "Version": "v8.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/polyfill-intl-idn@v1.38.1",
+            "symfony/polyfill-mbstring@v1.38.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 5186,
+              "EndLine": 5271
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/options-resolver@v8.1.0",
+          "Name": "symfony/options-resolver",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/options-resolver@v8.1.0",
+            "UID": "4a45fc6f84cd2d25"
+          },
+          "Version": "v8.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/deprecation-contracts@v3.7.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 5272,
+              "EndLine": 5342
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/polyfill-ctype@v1.37.0",
+          "Name": "symfony/polyfill-ctype",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/polyfill-ctype@v1.37.0",
+            "UID": "27caf35962fafbc"
+          },
+          "Version": "v1.37.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 5343,
+              "EndLine": 5425
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/polyfill-intl-grapheme@v1.38.1",
+          "Name": "symfony/polyfill-intl-grapheme",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/polyfill-intl-grapheme@v1.38.1",
+            "UID": "5e90b667051e39fb"
+          },
+          "Version": "v1.38.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 5426,
+              "EndLine": 5507
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/polyfill-intl-idn@v1.38.1",
+          "Name": "symfony/polyfill-intl-idn",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/polyfill-intl-idn@v1.38.1",
+            "UID": "8863231942bcd8b3"
+          },
+          "Version": "v1.38.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/polyfill-intl-normalizer@v1.38.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 5508,
+              "EndLine": 5594
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/polyfill-intl-normalizer@v1.38.0",
+          "Name": "symfony/polyfill-intl-normalizer",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/polyfill-intl-normalizer@v1.38.0",
+            "UID": "b6a3b05b2793104d"
+          },
+          "Version": "v1.38.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 5595,
+              "EndLine": 5679
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/polyfill-mbstring@v1.38.1",
+          "Name": "symfony/polyfill-mbstring",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/polyfill-mbstring@v1.38.1",
+            "UID": "5bf8fa717c77e495"
+          },
+          "Version": "v1.38.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 5680,
+              "EndLine": 5764
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/polyfill-php80@v1.37.0",
+          "Name": "symfony/polyfill-php80",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/polyfill-php80@v1.37.0",
+            "UID": "500b4629f0764953"
+          },
+          "Version": "v1.37.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 5765,
+              "EndLine": 5848
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/polyfill-php84@v1.38.1",
+          "Name": "symfony/polyfill-php84",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/polyfill-php84@v1.38.1",
+            "UID": "3f137ab10e2e32b1"
+          },
+          "Version": "v1.38.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 5849,
+              "EndLine": 5928
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/polyfill-php85@v1.38.1",
+          "Name": "symfony/polyfill-php85",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/polyfill-php85@v1.38.1",
+            "UID": "904894ba6e15822f"
+          },
+          "Version": "v1.38.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 5929,
+              "EndLine": 6008
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/polyfill-php86@v1.38.0",
+          "Name": "symfony/polyfill-php86",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/polyfill-php86@v1.38.0",
+            "UID": "b3e322d52bf0e0e5"
+          },
+          "Version": "v1.38.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 6009,
+              "EndLine": 6088
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/polyfill-uuid@v1.37.0",
+          "Name": "symfony/polyfill-uuid",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/polyfill-uuid@v1.37.0",
+            "UID": "af2d27ad758d8b7b"
+          },
+          "Version": "v1.37.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 6089,
+              "EndLine": 6171
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/process@v8.1.0",
+          "Name": "symfony/process",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/process@v8.1.0",
+            "UID": "4173fb0fdcd909e5"
+          },
+          "Version": "v8.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 6172,
+              "EndLine": 6236
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/psr-http-message-bridge@v8.1.0",
+          "Name": "symfony/psr-http-message-bridge",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/psr-http-message-bridge@v8.1.0",
+            "UID": "dfc90fe0c7e0fea4"
+          },
+          "Version": "v8.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "psr/http-message@2.0",
+            "symfony/http-foundation@v8.1.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 6237,
+              "EndLine": 6323
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/routing@v8.1.0",
+          "Name": "symfony/routing",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/routing@v8.1.0",
+            "UID": "c537b7e96918116"
+          },
+          "Version": "v8.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/deprecation-contracts@v3.7.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 6324,
+              "EndLine": 6403
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/service-contracts@v3.7.0",
+          "Name": "symfony/service-contracts",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/service-contracts@v3.7.0",
+            "UID": "2504745874613fb9"
+          },
+          "Version": "v3.7.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "psr/container@2.0.2",
+            "symfony/deprecation-contracts@v3.7.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 6404,
+              "EndLine": 6490
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/string@v8.1.0",
+          "Name": "symfony/string",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/string@v8.1.0",
+            "UID": "1e3985c81c0fd529"
+          },
+          "Version": "v8.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/polyfill-ctype@v1.37.0",
+            "symfony/polyfill-intl-grapheme@v1.38.1",
+            "symfony/polyfill-intl-normalizer@v1.38.0",
+            "symfony/polyfill-mbstring@v1.38.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 6491,
+              "EndLine": 6580
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/translation@v8.1.0",
+          "Name": "symfony/translation",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/translation@v8.1.0",
+            "UID": "7fde1c25b6bb3966"
+          },
+          "Version": "v8.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/polyfill-mbstring@v1.38.1",
+            "symfony/translation-contracts@v3.7.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 6581,
+              "EndLine": 6673
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/translation-contracts@v3.7.0",
+          "Name": "symfony/translation-contracts",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/translation-contracts@v3.7.0",
+            "UID": "caa4f23444aa4550"
+          },
+          "Version": "v3.7.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 6674,
+              "EndLine": 6755
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/uid@v8.1.0",
+          "Name": "symfony/uid",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/uid@v8.1.0",
+            "UID": "bc9600ac486c9b02"
+          },
+          "Version": "v8.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/polyfill-uuid@v1.37.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 6756,
+              "EndLine": 6833
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/var-dumper@v8.1.0",
+          "Name": "symfony/var-dumper",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/var-dumper@v8.1.0",
+            "UID": "6f137f2dd2769857"
+          },
+          "Version": "v8.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/polyfill-mbstring@v1.38.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 6834,
+              "EndLine": 6920
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "tijsverkoyen/css-to-inline-styles@v2.4.0",
+          "Name": "tijsverkoyen/css-to-inline-styles",
+          "Identifier": {
+            "PURL": "pkg:composer/tijsverkoyen/css-to-inline-styles@v2.4.0",
+            "UID": "b36b10890ff440ba"
+          },
+          "Version": "v2.4.0",
+          "Licenses": [
+            "BSD-3-Clause"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/css-selector@v8.1.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 6921,
+              "EndLine": 6975
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "vlucas/phpdotenv@v5.6.3",
+          "Name": "vlucas/phpdotenv",
+          "Identifier": {
+            "PURL": "pkg:composer/vlucas/phpdotenv@v5.6.3",
+            "UID": "b9153969704e64c3"
+          },
+          "Version": "v5.6.3",
+          "Licenses": [
+            "BSD-3-Clause"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "graham-campbell/result-type@v1.1.4",
+            "phpoption/phpoption@1.9.5",
+            "symfony/polyfill-ctype@v1.37.0",
+            "symfony/polyfill-mbstring@v1.38.1",
+            "symfony/polyfill-php80@v1.37.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 6976,
+              "EndLine": 7059
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "voku/portable-ascii@2.1.1",
+          "Name": "voku/portable-ascii",
+          "Identifier": {
+            "PURL": "pkg:composer/voku/portable-ascii@2.1.1",
+            "UID": "f3cd94a0280fc22"
+          },
+          "Version": "2.1.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 7060,
+              "EndLine": 7133
+            }
+          ],
+          "AnalyzedBy": "composer"
+        }
+      ]
+    },
+    {
+      "Target": "eventis/backend/vendor/laravel/framework/src/Illuminate/Foundation/resources/exceptions/renderer/package-lock.json",
+      "Class": "lang-pkgs",
+      "Type": "npm",
+      "Packages": [
+        {
+          "ID": "alpinejs@3.15.8",
+          "Name": "alpinejs",
+          "Identifier": {
+            "PURL": "pkg:npm/alpinejs@3.15.8",
+            "UID": "865868fe9637ffbb"
+          },
+          "Version": "3.15.8",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "@vue/reactivity@3.1.5"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1261,
+              "EndLine": 1267
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "shiki@3.22.0",
+          "Name": "shiki",
+          "Identifier": {
+            "PURL": "pkg:npm/shiki@3.22.0",
+            "UID": "a71c7795f0357895"
+          },
+          "Version": "3.22.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "@shikijs/core@3.22.0",
+            "@shikijs/engine-javascript@3.22.0",
+            "@shikijs/engine-oniguruma@3.22.0",
+            "@shikijs/langs@3.22.0",
+            "@shikijs/themes@3.22.0",
+            "@shikijs/types@3.22.0",
+            "@shikijs/vscode-textmate@10.0.2",
+            "@types/hast@3.0.4"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1976,
+              "EndLine": 1989
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "tailwindcss@4.1.18",
+          "Name": "tailwindcss",
+          "Identifier": {
+            "PURL": "pkg:npm/tailwindcss@4.1.18",
+            "UID": "145415de0d9766b2"
+          },
+          "Version": "4.1.18",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 2018,
+              "EndLine": 2021
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "tippy.js@6.3.7",
+          "Name": "tippy.js",
+          "Identifier": {
+            "PURL": "pkg:npm/tippy.js@6.3.7",
+            "UID": "a60f29bdf337f0e9"
+          },
+          "Version": "6.3.7",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "@popperjs/core@2.11.8"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2049,
+              "EndLine": 2055
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "tw-animate-css@1.4.0",
+          "Name": "tw-animate-css",
+          "Identifier": {
+            "PURL": "pkg:npm/tw-animate-css@1.4.0",
+            "UID": "3f216a87698e51c"
+          },
+          "Version": "1.4.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 2064,
+              "EndLine": 2070
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@popperjs/core@2.11.8",
+          "Name": "@popperjs/core",
+          "Identifier": {
+            "PURL": "pkg:npm/%40popperjs/core@2.11.8",
+            "UID": "eadcc0797d0333d8"
+          },
+          "Version": "2.11.8",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 502,
+              "EndLine": 509
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@shikijs/core@3.22.0",
+          "Name": "@shikijs/core",
+          "Identifier": {
+            "PURL": "pkg:npm/%40shikijs/core@3.22.0",
+            "UID": "40614686fd8988d1"
+          },
+          "Version": "3.22.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@shikijs/types@3.22.0",
+            "@shikijs/vscode-textmate@10.0.2",
+            "@types/hast@3.0.4",
+            "hast-util-to-html@9.0.5"
+          ],
+          "Locations": [
+            {
+              "StartLine": 846,
+              "EndLine": 855
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@shikijs/engine-javascript@3.22.0",
+          "Name": "@shikijs/engine-javascript",
+          "Identifier": {
+            "PURL": "pkg:npm/%40shikijs/engine-javascript@3.22.0",
+            "UID": "3c874c4845130774"
+          },
+          "Version": "3.22.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@shikijs/types@3.22.0",
+            "@shikijs/vscode-textmate@10.0.2",
+            "oniguruma-to-es@4.3.4"
+          ],
+          "Locations": [
+            {
+              "StartLine": 856,
+              "EndLine": 864
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@shikijs/engine-oniguruma@3.22.0",
+          "Name": "@shikijs/engine-oniguruma",
+          "Identifier": {
+            "PURL": "pkg:npm/%40shikijs/engine-oniguruma@3.22.0",
+            "UID": "333be219098254e3"
+          },
+          "Version": "3.22.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@shikijs/types@3.22.0",
+            "@shikijs/vscode-textmate@10.0.2"
+          ],
+          "Locations": [
+            {
+              "StartLine": 865,
+              "EndLine": 872
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@shikijs/langs@3.22.0",
+          "Name": "@shikijs/langs",
+          "Identifier": {
+            "PURL": "pkg:npm/%40shikijs/langs@3.22.0",
+            "UID": "8b43c21b82e3fe2e"
+          },
+          "Version": "3.22.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@shikijs/types@3.22.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 873,
+              "EndLine": 879
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@shikijs/themes@3.22.0",
+          "Name": "@shikijs/themes",
+          "Identifier": {
+            "PURL": "pkg:npm/%40shikijs/themes@3.22.0",
+            "UID": "4f1a7fea6b49cf3"
+          },
+          "Version": "3.22.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@shikijs/types@3.22.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 880,
+              "EndLine": 886
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@shikijs/types@3.22.0",
+          "Name": "@shikijs/types",
+          "Identifier": {
+            "PURL": "pkg:npm/%40shikijs/types@3.22.0",
+            "UID": "5523d4b876c00fd8"
+          },
+          "Version": "3.22.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@shikijs/vscode-textmate@10.0.2",
+            "@types/hast@3.0.4"
+          ],
+          "Locations": [
+            {
+              "StartLine": 887,
+              "EndLine": 894
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@shikijs/vscode-textmate@10.0.2",
+          "Name": "@shikijs/vscode-textmate",
+          "Identifier": {
+            "PURL": "pkg:npm/%40shikijs/vscode-textmate@10.0.2",
+            "UID": "5c55a5c3662c9dfd"
+          },
+          "Version": "10.0.2",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 895,
+              "EndLine": 898
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@types/hast@3.0.4",
+          "Name": "@types/hast",
+          "Identifier": {
+            "PURL": "pkg:npm/%40types/hast@3.0.4",
+            "UID": "837e06447078373b"
+          },
+          "Version": "3.0.4",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@types/unist@3.0.3"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1228,
+              "EndLine": 1234
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@types/mdast@4.0.4",
+          "Name": "@types/mdast",
+          "Identifier": {
+            "PURL": "pkg:npm/%40types/mdast@4.0.4",
+            "UID": "d5d37b998cd37e30"
+          },
+          "Version": "4.0.4",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@types/unist@3.0.3"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1235,
+              "EndLine": 1241
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@types/unist@3.0.3",
+          "Name": "@types/unist",
+          "Identifier": {
+            "PURL": "pkg:npm/%40types/unist@3.0.3",
+            "UID": "aa965d23544ea3ba"
+          },
+          "Version": "3.0.3",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1242,
+              "EndLine": 1245
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@ungap/structured-clone@1.3.0",
+          "Name": "@ungap/structured-clone",
+          "Identifier": {
+            "PURL": "pkg:npm/%40ungap/structured-clone@1.3.0",
+            "UID": "c7c623073cd9c13d"
+          },
+          "Version": "1.3.0",
+          "Licenses": [
+            "ISC"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1246,
+              "EndLine": 1249
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@vue/reactivity@3.1.5",
+          "Name": "@vue/reactivity",
+          "Identifier": {
+            "PURL": "pkg:npm/%40vue/reactivity@3.1.5",
+            "UID": "5ae6357029817d2b"
+          },
+          "Version": "3.1.5",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@vue/shared@3.1.5"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1250,
+              "EndLine": 1256
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@vue/shared@3.1.5",
+          "Name": "@vue/shared",
+          "Identifier": {
+            "PURL": "pkg:npm/%40vue/shared@3.1.5",
+            "UID": "c2d4b4d10e51be7a"
+          },
+          "Version": "3.1.5",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1257,
+              "EndLine": 1260
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "ccount@2.0.1",
+          "Name": "ccount",
+          "Identifier": {
+            "PURL": "pkg:npm/ccount@2.0.1",
+            "UID": "7f2377f8f36ba530"
+          },
+          "Version": "2.0.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1268,
+              "EndLine": 1275
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "character-entities-html4@2.1.0",
+          "Name": "character-entities-html4",
+          "Identifier": {
+            "PURL": "pkg:npm/character-entities-html4@2.1.0",
+            "UID": "fed399a44f64e579"
+          },
+          "Version": "2.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1276,
+              "EndLine": 1283
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "character-entities-legacy@3.0.0",
+          "Name": "character-entities-legacy",
+          "Identifier": {
+            "PURL": "pkg:npm/character-entities-legacy@3.0.0",
+            "UID": "562767e8f07c869d"
+          },
+          "Version": "3.0.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1284,
+              "EndLine": 1291
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "comma-separated-tokens@2.0.3",
+          "Name": "comma-separated-tokens",
+          "Identifier": {
+            "PURL": "pkg:npm/comma-separated-tokens@2.0.3",
+            "UID": "c00608e088564eb6"
+          },
+          "Version": "2.0.3",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1292,
+              "EndLine": 1299
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "dequal@2.0.3",
+          "Name": "dequal",
+          "Identifier": {
+            "PURL": "pkg:npm/dequal@2.0.3",
+            "UID": "65aa0d979150102e"
+          },
+          "Version": "2.0.3",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1300,
+              "EndLine": 1306
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "devlop@1.1.0",
+          "Name": "devlop",
+          "Identifier": {
+            "PURL": "pkg:npm/devlop@1.1.0",
+            "UID": "cbd626ef549069f1"
+          },
+          "Version": "1.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "dequal@2.0.3"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1315,
+              "EndLine": 1325
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "hast-util-to-html@9.0.5",
+          "Name": "hast-util-to-html",
+          "Identifier": {
+            "PURL": "pkg:npm/hast-util-to-html@9.0.5",
+            "UID": "6fd2093a186cd697"
+          },
+          "Version": "9.0.5",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@types/hast@3.0.4",
+            "@types/unist@3.0.3",
+            "ccount@2.0.1",
+            "comma-separated-tokens@2.0.3",
+            "hast-util-whitespace@3.0.0",
+            "html-void-elements@3.0.0",
+            "mdast-util-to-hast@13.2.1",
+            "property-information@7.1.0",
+            "space-separated-tokens@2.0.2",
+            "stringify-entities@4.0.4",
+            "zwitch@2.0.4"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1411,
+              "EndLine": 1431
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "hast-util-whitespace@3.0.0",
+          "Name": "hast-util-whitespace",
+          "Identifier": {
+            "PURL": "pkg:npm/hast-util-whitespace@3.0.0",
+            "UID": "7de0157628ad6b4b"
+          },
+          "Version": "3.0.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@types/hast@3.0.4"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1432,
+              "EndLine": 1442
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "html-void-elements@3.0.0",
+          "Name": "html-void-elements",
+          "Identifier": {
+            "PURL": "pkg:npm/html-void-elements@3.0.0",
+            "UID": "417d4ac1ba015be1"
+          },
+          "Version": "3.0.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1443,
+              "EndLine": 1450
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "mdast-util-to-hast@13.2.1",
+          "Name": "mdast-util-to-hast",
+          "Identifier": {
+            "PURL": "pkg:npm/mdast-util-to-hast@13.2.1",
+            "UID": "4f7864a193bd9049"
+          },
+          "Version": "13.2.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@types/hast@3.0.4",
+            "@types/mdast@4.0.4",
+            "@ungap/structured-clone@1.3.0",
+            "devlop@1.1.0",
+            "micromark-util-sanitize-uri@2.0.1",
+            "trim-lines@3.0.1",
+            "unist-util-position@5.0.0",
+            "unist-util-visit@5.1.0",
+            "vfile@6.0.3"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1724,
+              "EndLine": 1742
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "micromark-util-character@2.1.1",
+          "Name": "micromark-util-character",
+          "Identifier": {
+            "PURL": "pkg:npm/micromark-util-character@2.1.1",
+            "UID": "e692179f970311d4"
+          },
+          "Version": "2.1.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "micromark-util-symbol@2.0.1",
+            "micromark-util-types@2.0.2"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1743,
+              "EndLine": 1760
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "micromark-util-encode@2.0.1",
+          "Name": "micromark-util-encode",
+          "Identifier": {
+            "PURL": "pkg:npm/micromark-util-encode@2.0.1",
+            "UID": "aac8f08722bb9736"
+          },
+          "Version": "2.0.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1761,
+              "EndLine": 1774
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "micromark-util-sanitize-uri@2.0.1",
+          "Name": "micromark-util-sanitize-uri",
+          "Identifier": {
+            "PURL": "pkg:npm/micromark-util-sanitize-uri@2.0.1",
+            "UID": "869634b702972a24"
+          },
+          "Version": "2.0.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "micromark-util-character@2.1.1",
+            "micromark-util-encode@2.0.1",
+            "micromark-util-symbol@2.0.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1775,
+              "EndLine": 1793
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "micromark-util-symbol@2.0.1",
+          "Name": "micromark-util-symbol",
+          "Identifier": {
+            "PURL": "pkg:npm/micromark-util-symbol@2.0.1",
+            "UID": "7646966de4d60f08"
+          },
+          "Version": "2.0.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1794,
+              "EndLine": 1807
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "micromark-util-types@2.0.2",
+          "Name": "micromark-util-types",
+          "Identifier": {
+            "PURL": "pkg:npm/micromark-util-types@2.0.2",
+            "UID": "367b5ba453da887c"
+          },
+          "Version": "2.0.2",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1808,
+              "EndLine": 1821
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "oniguruma-parser@0.12.1",
+          "Name": "oniguruma-parser",
+          "Identifier": {
+            "PURL": "pkg:npm/oniguruma-parser@0.12.1",
+            "UID": "52994100d4dffb96"
+          },
+          "Version": "0.12.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1839,
+              "EndLine": 1842
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "oniguruma-to-es@4.3.4",
+          "Name": "oniguruma-to-es",
+          "Identifier": {
+            "PURL": "pkg:npm/oniguruma-to-es@4.3.4",
+            "UID": "d0e2dd4cc0d65acb"
+          },
+          "Version": "4.3.4",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "oniguruma-parser@0.12.1",
+            "regex-recursion@6.0.2",
+            "regex@6.1.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1843,
+              "EndLine": 1851
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "property-information@7.1.0",
+          "Name": "property-information",
+          "Identifier": {
+            "PURL": "pkg:npm/property-information@7.1.0",
+            "UID": "33365280ae75b5a6"
+          },
+          "Version": "7.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1895,
+              "EndLine": 1902
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "regex@6.1.0",
+          "Name": "regex",
+          "Identifier": {
+            "PURL": "pkg:npm/regex@6.1.0",
+            "UID": "3f0a373fbb40ba3b"
+          },
+          "Version": "6.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "regex-utilities@2.3.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1903,
+              "EndLine": 1909
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "regex-recursion@6.0.2",
+          "Name": "regex-recursion",
+          "Identifier": {
+            "PURL": "pkg:npm/regex-recursion@6.0.2",
+            "UID": "d08291612d030cf8"
+          },
+          "Version": "6.0.2",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "regex-utilities@2.3.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1910,
+              "EndLine": 1916
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "regex-utilities@2.3.0",
+          "Name": "regex-utilities",
+          "Identifier": {
+            "PURL": "pkg:npm/regex-utilities@2.3.0",
+            "UID": "bd566aaa3480d26e"
+          },
+          "Version": "2.3.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1917,
+              "EndLine": 1920
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "space-separated-tokens@2.0.2",
+          "Name": "space-separated-tokens",
+          "Identifier": {
+            "PURL": "pkg:npm/space-separated-tokens@2.0.2",
+            "UID": "cc717f6309a09683"
+          },
+          "Version": "2.0.2",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1998,
+              "EndLine": 2005
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "stringify-entities@4.0.4",
+          "Name": "stringify-entities",
+          "Identifier": {
+            "PURL": "pkg:npm/stringify-entities@4.0.4",
+            "UID": "15ebf126ffb0e4c7"
+          },
+          "Version": "4.0.4",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "character-entities-html4@2.1.0",
+            "character-entities-legacy@3.0.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2006,
+              "EndLine": 2017
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "trim-lines@3.0.1",
+          "Name": "trim-lines",
+          "Identifier": {
+            "PURL": "pkg:npm/trim-lines@3.0.1",
+            "UID": "ce252401cc77787f"
+          },
+          "Version": "3.0.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 2056,
+              "EndLine": 2063
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "unist-util-is@6.0.1",
+          "Name": "unist-util-is",
+          "Identifier": {
+            "PURL": "pkg:npm/unist-util-is@6.0.1",
+            "UID": "3895a23877182cd4"
+          },
+          "Version": "6.0.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@types/unist@3.0.3"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2071,
+              "EndLine": 2081
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "unist-util-position@5.0.0",
+          "Name": "unist-util-position",
+          "Identifier": {
+            "PURL": "pkg:npm/unist-util-position@5.0.0",
+            "UID": "eba26900544d36c6"
+          },
+          "Version": "5.0.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@types/unist@3.0.3"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2082,
+              "EndLine": 2092
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "unist-util-stringify-position@4.0.0",
+          "Name": "unist-util-stringify-position",
+          "Identifier": {
+            "PURL": "pkg:npm/unist-util-stringify-position@4.0.0",
+            "UID": "b933570d4ba0b8fd"
+          },
+          "Version": "4.0.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@types/unist@3.0.3"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2093,
+              "EndLine": 2103
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "unist-util-visit@5.1.0",
+          "Name": "unist-util-visit",
+          "Identifier": {
+            "PURL": "pkg:npm/unist-util-visit@5.1.0",
+            "UID": "5edde7d753932888"
+          },
+          "Version": "5.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@types/unist@3.0.3",
+            "unist-util-is@6.0.1",
+            "unist-util-visit-parents@6.0.2"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2104,
+              "EndLine": 2116
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "unist-util-visit-parents@6.0.2",
+          "Name": "unist-util-visit-parents",
+          "Identifier": {
+            "PURL": "pkg:npm/unist-util-visit-parents@6.0.2",
+            "UID": "5e2fb25bae3a6d0"
+          },
+          "Version": "6.0.2",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@types/unist@3.0.3",
+            "unist-util-is@6.0.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2117,
+              "EndLine": 2128
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "vfile@6.0.3",
+          "Name": "vfile",
+          "Identifier": {
+            "PURL": "pkg:npm/vfile@6.0.3",
+            "UID": "612c31f922c69bfa"
+          },
+          "Version": "6.0.3",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@types/unist@3.0.3",
+            "vfile-message@4.0.3"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2129,
+              "EndLine": 2140
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "vfile-message@4.0.3",
+          "Name": "vfile-message",
+          "Identifier": {
+            "PURL": "pkg:npm/vfile-message@4.0.3",
+            "UID": "f48f1d15a4d863e"
+          },
+          "Version": "4.0.3",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@types/unist@3.0.3",
+            "unist-util-stringify-position@4.0.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2141,
+              "EndLine": 2152
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "zwitch@2.0.4",
+          "Name": "zwitch",
+          "Identifier": {
+            "PURL": "pkg:npm/zwitch@2.0.4",
+            "UID": "c0334cccc6eaa375"
+          },
+          "Version": "2.0.4",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 2228,
+              "EndLine": 2235
+            }
+          ],
+          "AnalyzedBy": "npm"
+        }
+      ]
+    },
+    {
+      "Target": "eventis/backend/vendor/mockery/mockery/docs/requirements.txt",
+      "Class": "lang-pkgs",
+      "Type": "pip",
+      "Packages": [
+        {
+          "Name": "Babel",
+          "Identifier": {
+            "PURL": "pkg:pypi/babel@2.14.0",
+            "UID": "5014e037e75b939e"
+          },
+          "Version": "2.14.0",
+          "Locations": [
+            {
+              "StartLine": 2,
+              "EndLine": 2
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "Jinja2",
+          "Identifier": {
+            "PURL": "pkg:pypi/jinja2@3.1.4",
+            "UID": "eb2501e0cda8b05"
+          },
+          "Version": "3.1.4",
+          "Locations": [
+            {
+              "StartLine": 8,
+              "EndLine": 8
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "MarkupSafe",
+          "Identifier": {
+            "PURL": "pkg:pypi/markupsafe@2.1.5",
+            "UID": "2ee69901cc061697"
+          },
+          "Version": "2.1.5",
+          "Locations": [
+            {
+              "StartLine": 9,
+              "EndLine": 9
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "Pygments",
+          "Identifier": {
+            "PURL": "pkg:pypi/pygments@2.17.2",
+            "UID": "6547e64f9fa38e01"
+          },
+          "Version": "2.17.2",
+          "Locations": [
+            {
+              "StartLine": 11,
+              "EndLine": 11
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "Sphinx",
+          "Identifier": {
+            "PURL": "pkg:pypi/sphinx@7.3.7",
+            "UID": "880beacb9cc0ee25"
+          },
+          "Version": "7.3.7",
+          "Locations": [
+            {
+              "StartLine": 15,
+              "EndLine": 15
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "alabaster",
+          "Identifier": {
+            "PURL": "pkg:pypi/alabaster@0.7.16",
+            "UID": "fcce95fead699110"
+          },
+          "Version": "0.7.16",
+          "Locations": [
+            {
+              "StartLine": 1,
+              "EndLine": 1
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "certifi",
+          "Identifier": {
+            "PURL": "pkg:pypi/certifi@2024.2.2",
+            "UID": "4b59da953c1a2eb2"
+          },
+          "Version": "2024.2.2",
+          "Locations": [
+            {
+              "StartLine": 3,
+              "EndLine": 3
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "charset-normalizer",
+          "Identifier": {
+            "PURL": "pkg:pypi/charset-normalizer@3.3.2",
+            "UID": "5b5d84c620c139cf"
+          },
+          "Version": "3.3.2",
+          "Locations": [
+            {
+              "StartLine": 4,
+              "EndLine": 4
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "docutils",
+          "Identifier": {
+            "PURL": "pkg:pypi/docutils@0.20.1",
+            "UID": "3ad9fd25bb637f7c"
+          },
+          "Version": "0.20.1",
+          "Locations": [
+            {
+              "StartLine": 5,
+              "EndLine": 5
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "idna",
+          "Identifier": {
+            "PURL": "pkg:pypi/idna@3.7",
+            "UID": "46dd97685644d842"
+          },
+          "Version": "3.7",
+          "Locations": [
+            {
+              "StartLine": 6,
+              "EndLine": 6
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "imagesize",
+          "Identifier": {
+            "PURL": "pkg:pypi/imagesize@1.4.1",
+            "UID": "b45ee617b2d20fbc"
+          },
+          "Version": "1.4.1",
+          "Locations": [
+            {
+              "StartLine": 7,
+              "EndLine": 7
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "packaging",
+          "Identifier": {
+            "PURL": "pkg:pypi/packaging@24.0",
+            "UID": "c62e934374cf65d5"
+          },
+          "Version": "24.0",
+          "Locations": [
+            {
+              "StartLine": 10,
+              "EndLine": 10
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "requests",
+          "Identifier": {
+            "PURL": "pkg:pypi/requests@2.31.0",
+            "UID": "e4f0916b2cd51cad"
+          },
+          "Version": "2.31.0",
+          "Locations": [
+            {
+              "StartLine": 12,
+              "EndLine": 12
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "setuptools",
+          "Identifier": {
+            "PURL": "pkg:pypi/setuptools@69.2.0",
+            "UID": "f999f26cca92f683"
+          },
+          "Version": "69.2.0",
+          "Locations": [
+            {
+              "StartLine": 13,
+              "EndLine": 13
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "snowballstemmer",
+          "Identifier": {
+            "PURL": "pkg:pypi/snowballstemmer@2.2.0",
+            "UID": "b14cdbc63c86ba98"
+          },
+          "Version": "2.2.0",
+          "Locations": [
+            {
+              "StartLine": 14,
+              "EndLine": 14
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "sphinx-rtd-theme",
+          "Identifier": {
+            "PURL": "pkg:pypi/sphinx-rtd-theme@2.0.0",
+            "UID": "747a1732dc364de3"
+          },
+          "Version": "2.0.0",
+          "Locations": [
+            {
+              "StartLine": 16,
+              "EndLine": 16
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "sphinxcontrib-applehelp",
+          "Identifier": {
+            "PURL": "pkg:pypi/sphinxcontrib-applehelp@1.0.8",
+            "UID": "cf7aec3184ab5d3a"
+          },
+          "Version": "1.0.8",
+          "Locations": [
+            {
+              "StartLine": 17,
+              "EndLine": 17
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "sphinxcontrib-devhelp",
+          "Identifier": {
+            "PURL": "pkg:pypi/sphinxcontrib-devhelp@1.0.6",
+            "UID": "9fa8de1c8782894e"
+          },
+          "Version": "1.0.6",
+          "Locations": [
+            {
+              "StartLine": 18,
+              "EndLine": 18
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "sphinxcontrib-htmlhelp",
+          "Identifier": {
+            "PURL": "pkg:pypi/sphinxcontrib-htmlhelp@2.0.5",
+            "UID": "7746ffb907934e3a"
+          },
+          "Version": "2.0.5",
+          "Locations": [
+            {
+              "StartLine": 19,
+              "EndLine": 19
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "sphinxcontrib-jquery",
+          "Identifier": {
+            "PURL": "pkg:pypi/sphinxcontrib-jquery@4.1",
+            "UID": "7493c8599a5ab0b8"
+          },
+          "Version": "4.1",
+          "Locations": [
+            {
+              "StartLine": 20,
+              "EndLine": 20
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "sphinxcontrib-jsmath",
+          "Identifier": {
+            "PURL": "pkg:pypi/sphinxcontrib-jsmath@1.0.1",
+            "UID": "3030328b2f7b9a00"
+          },
+          "Version": "1.0.1",
+          "Locations": [
+            {
+              "StartLine": 21,
+              "EndLine": 21
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "sphinxcontrib-qthelp",
+          "Identifier": {
+            "PURL": "pkg:pypi/sphinxcontrib-qthelp@1.0.7",
+            "UID": "96a154fa5fcab637"
+          },
+          "Version": "1.0.7",
+          "Locations": [
+            {
+              "StartLine": 22,
+              "EndLine": 22
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "sphinxcontrib-serializinghtml",
+          "Identifier": {
+            "PURL": "pkg:pypi/sphinxcontrib-serializinghtml@1.1.10",
+            "UID": "b68c837306fa9052"
+          },
+          "Version": "1.1.10",
+          "Locations": [
+            {
+              "StartLine": 23,
+              "EndLine": 23
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "urllib3",
+          "Identifier": {
+            "PURL": "pkg:pypi/urllib3@2.2.1",
+            "UID": "184922c046d6c6d8"
+          },
+          "Version": "2.2.1",
+          "Locations": [
+            {
+              "StartLine": 24,
+              "EndLine": 24
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "wheel",
+          "Identifier": {
+            "PURL": "pkg:pypi/wheel@0.43.0",
+            "UID": "bce30712c1eb0327"
+          },
+          "Version": "0.43.0",
+          "Locations": [
+            {
+              "StartLine": 25,
+              "EndLine": 25
+            }
+          ],
+          "AnalyzedBy": "pip"
+        }
+      ],
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2024-6345",
+          "VendorIDs": [
+            "GHSA-cx63-2mw6-8hw5"
+          ],
+          "PkgName": "setuptools",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/setuptools@69.2.0",
+            "UID": "f999f26cca92f683"
+          },
+          "InstalledVersion": "69.2.0",
+          "FixedVersion": "70.0.0",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-6345",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:5e31d79033ca0646cad2f2071b1b049c3372b5e637fc4526e7c0b83ee2f903ff",
+          "Title": "pypa/setuptools: Remote code execution via download functions in the package_index module in pypa/setuptools",
+          "Description": "A vulnerability in the package_index module of pypa/setuptools versions up to 69.1.1 allows for remote code execution via its download functions. These functions, which are used to download packages from URLs provided by users or retrieved from package index servers, are susceptible to code injection. If these functions are exposed to user-controlled inputs, such as package URLs, they can execute arbitrary commands on the system. The issue is fixed in version 70.0.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-94"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "azure": 3,
+            "bitnami": 3,
+            "cbl-mariner": 3,
+            "ghsa": 3,
+            "oracle-oval": 3,
+            "photon": 3,
+            "redhat": 3,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+              "V3Score": 8.8,
+              "V40Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:6726",
+            "https://access.redhat.com/security/cve/CVE-2024-6345",
+            "https://bugzilla.redhat.com/2297771",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2297771",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-6345",
+            "https://errata.almalinux.org/9/ALSA-2024-6726.html",
+            "https://errata.rockylinux.org/RLSA-2024:6726",
+            "https://github.com/advisories/GHSA-cx63-2mw6-8hw5",
+            "https://github.com/pypa/setuptools",
+            "https://github.com/pypa/setuptools/commit/88807c7062788254f654ea8c03427adc859321f0",
+            "https://github.com/pypa/setuptools/pull/4332",
+            "https://huntr.com/bounties/d6362117-ad57-4e83-951f-b8141c6e7ca5",
+            "https://linux.oracle.com/cve/CVE-2024-6345.html",
+            "https://linux.oracle.com/errata/ELSA-2024-6726.html",
+            "https://lists.debian.org/debian-lts-announce/2024/09/msg00018.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-6345",
+            "https://ubuntu.com/security/notices/USN-7002-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-6345"
+          ],
+          "PublishedDate": "2024-07-15T01:15:01.73Z",
+          "LastModifiedDate": "2026-06-17T08:17:49.463Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-47273",
+          "VendorIDs": [
+            "GHSA-5rjg-fvgr-3xxf"
+          ],
+          "PkgName": "setuptools",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/setuptools@69.2.0",
+            "UID": "f999f26cca92f683"
+          },
+          "InstalledVersion": "69.2.0",
+          "FixedVersion": "78.1.1",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-47273",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:c798a11206ceb68c53391aba44056ab9721e9283bdb4a6f3cfc2b89f23b2bfdd",
+          "Title": "setuptools: Path Traversal Vulnerability in setuptools PackageIndex",
+          "Description": "setuptools is a package that allows users to download, build, install, upgrade, and uninstall Python packages. A path traversal vulnerability in `PackageIndex` is present in setuptools prior to version 78.1.1. An attacker would be allowed to write files to arbitrary locations on the filesystem with the permissions of the process running the Python code, which could escalate to remote code execution depending on the context. Version 78.1.1 fixes the issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-22"
+          ],
+          "VendorSeverity": {
+            "alma": 2,
+            "amazon": 3,
+            "azure": 3,
+            "bitnami": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 2,
+            "photon": 3,
+            "redhat": 2,
+            "rocky": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:P",
+              "V40Score": 7.7
+            },
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:P",
+              "V40Score": 7.7
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L",
+              "V3Score": 7.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2025:13578",
+            "https://access.redhat.com/security/cve/CVE-2025-47273",
+            "https://bugzilla.redhat.com/2366982",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2366982",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-47273",
+            "https://errata.almalinux.org/9/ALSA-2025-13578.html",
+            "https://errata.rockylinux.org/RLSA-2025:10407",
+            "https://github.com/pypa/advisory-database/tree/main/vulns/setuptools/PYSEC-2025-49.yaml",
+            "https://github.com/pypa/setuptools",
+            "https://github.com/pypa/setuptools/blob/6ead555c5fb29bc57fe6105b1bffc163f56fd558/setuptools/package_index.py#L810C1-L825C88",
+            "https://github.com/pypa/setuptools/commit/250a6d17978f9f6ac3ac887091f2d32886fbbb0b",
+            "https://github.com/pypa/setuptools/issues/4946",
+            "https://github.com/pypa/setuptools/security/advisories/GHSA-5rjg-fvgr-3xxf",
+            "https://linux.oracle.com/cve/CVE-2025-47273.html",
+            "https://linux.oracle.com/errata/ELSA-2025-9940.html",
+            "https://lists.debian.org/debian-lts-announce/2025/05/msg00035.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-47273",
+            "https://ubuntu.com/security/notices/USN-7544-1",
+            "https://ubuntu.com/security/notices/USN-8010-1",
+            "https://www.cve.org/CVERecord?id=CVE-2025-47273"
+          ],
+          "PublishedDate": "2025-05-17T16:15:19.11Z",
+          "LastModifiedDate": "2026-06-17T09:27:38.827Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-66418",
+          "VendorIDs": [
+            "GHSA-gm62-xv2j-4w53"
+          ],
+          "PkgName": "urllib3",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/urllib3@2.2.1",
+            "UID": "184922c046d6c6d8"
+          },
+          "InstalledVersion": "2.2.1",
+          "FixedVersion": "2.6.0",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-66418",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:197fe4210436e30ec4a4ffa6399798b9fda0255028c3c9da621a413fb486b855",
+          "Title": "urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion",
+          "Description": "urllib3 is a user-friendly HTTP client library for Python. Starting in version 1.24 and prior to 2.6.0, the number of links in the decompression chain was unbounded allowing a malicious server to insert a virtually unlimited number of compression steps leading to high CPU usage and massive memory allocation for the decompressed data. This vulnerability is fixed in 2.6.0.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "azure": 3,
+            "cbl-mariner": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "photon": 3,
+            "redhat": 3,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H",
+              "V40Score": 8.9
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:1239",
+            "https://access.redhat.com/security/cve/CVE-2025-66418",
+            "https://bugzilla.redhat.com/2419455",
+            "https://bugzilla.redhat.com/2419467",
+            "https://bugzilla.redhat.com/2427726",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2419455",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2419467",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2427726",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-66418",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-66471",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-21441",
+            "https://errata.almalinux.org/9/ALSA-2026-1239.html",
+            "https://errata.rockylinux.org/RLSA-2026:1087",
+            "https://github.com/urllib3/urllib3",
+            "https://github.com/urllib3/urllib3/commit/24d7b67eac89f94e11003424bcf0d8f7b72222a8",
+            "https://github.com/urllib3/urllib3/security/advisories/GHSA-gm62-xv2j-4w53",
+            "https://linux.oracle.com/cve/CVE-2025-66418.html",
+            "https://linux.oracle.com/errata/ELSA-2026-1254.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-66418",
+            "https://ubuntu.com/security/notices/USN-7927-1",
+            "https://ubuntu.com/security/notices/USN-8010-1",
+            "https://ubuntu.com/security/notices/USN-8344-1",
+            "https://www.cve.org/CVERecord?id=CVE-2025-66418",
+            "https://www.openwall.com/lists/oss-security/2025/12/05/4"
+          ],
+          "PublishedDate": "2025-12-05T16:15:51.053Z",
+          "LastModifiedDate": "2026-06-17T09:56:48.383Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-66471",
+          "VendorIDs": [
+            "GHSA-2xpw-w6gg-jr37"
+          ],
+          "PkgName": "urllib3",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/urllib3@2.2.1",
+            "UID": "184922c046d6c6d8"
+          },
+          "InstalledVersion": "2.2.1",
+          "FixedVersion": "2.6.0",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-66471",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:4d7fe437944d384682a82953c22c17c0d5d7bcb821e7fd04268a97de966f9c7d",
+          "Title": "urllib3: urllib3 Streaming API improperly handles highly compressed data",
+          "Description": "urllib3 is a user-friendly HTTP client library for Python. Starting in version 1.0 and prior to 2.6.0, the Streaming API improperly handles highly compressed data. urllib3's streaming API is designed for the efficient handling of large HTTP responses by reading the content in chunks, rather than loading the entire response body into memory at once. When streaming a compressed response, urllib3 can perform decoding or decompression based on the HTTP Content-Encoding header (e.g., gzip, deflate, br, or zstd). The library must read compressed data from the network and decompress it until the requested chunk size is met. Any resulting decompressed data that exceeds the requested amount is held in an internal buffer for the next read operation. The decompression logic could cause urllib3 to fully decode a small amount of highly compressed data in a single operation. This can result in excessive resource consumption (high CPU usage and massive memory allocation for the decompressed data.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-409"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "azure": 3,
+            "cbl-mariner": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "photon": 3,
+            "redhat": 3,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H",
+              "V40Score": 8.9
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:1239",
+            "https://access.redhat.com/security/cve/CVE-2025-66471",
+            "https://bugzilla.redhat.com/2419455",
+            "https://bugzilla.redhat.com/2419467",
+            "https://bugzilla.redhat.com/2427726",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2419455",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2419467",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2427726",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-66418",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-66471",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-21441",
+            "https://errata.almalinux.org/9/ALSA-2026-1239.html",
+            "https://errata.rockylinux.org/RLSA-2026:1087",
+            "https://github.com/urllib3/urllib3",
+            "https://github.com/urllib3/urllib3/commit/c19571de34c47de3a766541b041637ba5f716ed7",
+            "https://github.com/urllib3/urllib3/security/advisories/GHSA-2xpw-w6gg-jr37",
+            "https://linux.oracle.com/cve/CVE-2025-66471.html",
+            "https://linux.oracle.com/errata/ELSA-2026-1254.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-66471",
+            "https://ubuntu.com/security/notices/USN-7927-1",
+            "https://ubuntu.com/security/notices/USN-7927-2",
+            "https://ubuntu.com/security/notices/USN-7927-3",
+            "https://ubuntu.com/security/notices/USN-8344-1",
+            "https://ubuntu.com/security/notices/USN-8344-2",
+            "https://ubuntu.com/security/notices/USN-8344-3",
+            "https://www.cve.org/CVERecord?id=CVE-2025-66471",
+            "https://www.openwall.com/lists/oss-security/2025/12/05/4"
+          ],
+          "PublishedDate": "2025-12-05T17:16:04.4Z",
+          "LastModifiedDate": "2026-06-17T09:56:53.65Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-21441",
+          "VendorIDs": [
+            "GHSA-38jv-5279-wg99"
+          ],
+          "PkgName": "urllib3",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/urllib3@2.2.1",
+            "UID": "184922c046d6c6d8"
+          },
+          "InstalledVersion": "2.2.1",
+          "FixedVersion": "2.6.3",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-21441",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:f9839f67dc2e2736bd1f0c8b99f31157080c9972977cac8e08bf4be4760bba63",
+          "Title": "urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API)",
+          "Description": "urllib3 is an HTTP client library for Python. urllib3's streaming API is designed for the efficient handling of large HTTP responses by reading the content in chunks, rather than loading the entire response body into memory at once. urllib3 can perform decoding or decompression based on the HTTP `Content-Encoding` header (e.g., `gzip`, `deflate`, `br`, or `zstd`). When using the streaming API, the library decompresses only the necessary bytes, enabling partial content consumption. Starting in version 1.22 and prior to version 2.6.3, for HTTP redirect responses, the library would read the entire response body to drain the connection and decompress the content unnecessarily. This decompression occurred even before any read methods were called, and configured read limits did not restrict the amount of decompressed data. As a result, there was no safeguard against decompression bombs. A malicious server could exploit this to trigger excessive resource consumption on the client. Applications and libraries are affected when they stream content from untrusted sources by setting `preload_content=False` when they do not disable redirects. Users should upgrade to at least urllib3 v2.6.3, in which the library does not decode content of redirect responses when `preload_content=False`. If upgrading is not immediately possible, disable redirects by setting `redirect=False` for requests to untrusted source.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-409"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "azure": 3,
+            "cbl-mariner": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "photon": 3,
+            "redhat": 3,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H",
+              "V3Score": 7.5,
+              "V40Score": 8.9
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:0981",
+            "https://access.redhat.com/errata/RHSA-2026:0990",
+            "https://access.redhat.com/errata/RHSA-2026:10184",
+            "https://access.redhat.com/errata/RHSA-2026:1038",
+            "https://access.redhat.com/errata/RHSA-2026:1041",
+            "https://access.redhat.com/errata/RHSA-2026:1042",
+            "https://access.redhat.com/errata/RHSA-2026:1086",
+            "https://access.redhat.com/errata/RHSA-2026:1087",
+            "https://access.redhat.com/errata/RHSA-2026:1088",
+            "https://access.redhat.com/errata/RHSA-2026:1089",
+            "https://access.redhat.com/errata/RHSA-2026:1166",
+            "https://access.redhat.com/errata/RHSA-2026:1168",
+            "https://access.redhat.com/errata/RHSA-2026:1176",
+            "https://access.redhat.com/errata/RHSA-2026:1224",
+            "https://access.redhat.com/errata/RHSA-2026:1226",
+            "https://access.redhat.com/errata/RHSA-2026:1239",
+            "https://access.redhat.com/errata/RHSA-2026:1240",
+            "https://access.redhat.com/errata/RHSA-2026:1241",
+            "https://access.redhat.com/errata/RHSA-2026:1254",
+            "https://access.redhat.com/errata/RHSA-2026:1485",
+            "https://access.redhat.com/errata/RHSA-2026:14877",
+            "https://access.redhat.com/errata/RHSA-2026:1504",
+            "https://access.redhat.com/errata/RHSA-2026:1546",
+            "https://access.redhat.com/errata/RHSA-2026:1596",
+            "https://access.redhat.com/errata/RHSA-2026:1599",
+            "https://access.redhat.com/errata/RHSA-2026:1609",
+            "https://access.redhat.com/errata/RHSA-2026:1618",
+            "https://access.redhat.com/errata/RHSA-2026:1619",
+            "https://access.redhat.com/errata/RHSA-2026:1652",
+            "https://access.redhat.com/errata/RHSA-2026:1674",
+            "https://access.redhat.com/errata/RHSA-2026:1676",
+            "https://access.redhat.com/errata/RHSA-2026:1693",
+            "https://access.redhat.com/errata/RHSA-2026:1704",
+            "https://access.redhat.com/errata/RHSA-2026:1706",
+            "https://access.redhat.com/errata/RHSA-2026:1712",
+            "https://access.redhat.com/errata/RHSA-2026:1717",
+            "https://access.redhat.com/errata/RHSA-2026:1726",
+            "https://access.redhat.com/errata/RHSA-2026:1729",
+            "https://access.redhat.com/errata/RHSA-2026:1730",
+            "https://access.redhat.com/errata/RHSA-2026:1734",
+            "https://access.redhat.com/errata/RHSA-2026:1735",
+            "https://access.redhat.com/errata/RHSA-2026:1736",
+            "https://access.redhat.com/errata/RHSA-2026:17456",
+            "https://access.redhat.com/errata/RHSA-2026:17457",
+            "https://access.redhat.com/errata/RHSA-2026:17460",
+            "https://access.redhat.com/errata/RHSA-2026:17461",
+            "https://access.redhat.com/errata/RHSA-2026:17462",
+            "https://access.redhat.com/errata/RHSA-2026:17463",
+            "https://access.redhat.com/errata/RHSA-2026:1791",
+            "https://access.redhat.com/errata/RHSA-2026:1792",
+            "https://access.redhat.com/errata/RHSA-2026:1793",
+            "https://access.redhat.com/errata/RHSA-2026:1794",
+            "https://access.redhat.com/errata/RHSA-2026:1803",
+            "https://access.redhat.com/errata/RHSA-2026:1805",
+            "https://access.redhat.com/errata/RHSA-2026:1942",
+            "https://access.redhat.com/errata/RHSA-2026:1957",
+            "https://access.redhat.com/errata/RHSA-2026:19712",
+            "https://access.redhat.com/errata/RHSA-2026:2106",
+            "https://access.redhat.com/errata/RHSA-2026:2126",
+            "https://access.redhat.com/errata/RHSA-2026:2137",
+            "https://access.redhat.com/errata/RHSA-2026:2139",
+            "https://access.redhat.com/errata/RHSA-2026:2144",
+            "https://access.redhat.com/errata/RHSA-2026:2256",
+            "https://access.redhat.com/errata/RHSA-2026:2456",
+            "https://access.redhat.com/errata/RHSA-2026:2500",
+            "https://access.redhat.com/errata/RHSA-2026:25127",
+            "https://access.redhat.com/errata/RHSA-2026:2563",
+            "https://access.redhat.com/errata/RHSA-2026:2681",
+            "https://access.redhat.com/errata/RHSA-2026:2695",
+            "https://access.redhat.com/errata/RHSA-2026:2717",
+            "https://access.redhat.com/errata/RHSA-2026:2718",
+            "https://access.redhat.com/errata/RHSA-2026:2723",
+            "https://access.redhat.com/errata/RHSA-2026:2728",
+            "https://access.redhat.com/errata/RHSA-2026:2760",
+            "https://access.redhat.com/errata/RHSA-2026:2762",
+            "https://access.redhat.com/errata/RHSA-2026:2764",
+            "https://access.redhat.com/errata/RHSA-2026:2765",
+            "https://access.redhat.com/errata/RHSA-2026:28043",
+            "https://access.redhat.com/errata/RHSA-2026:28441",
+            "https://access.redhat.com/errata/RHSA-2026:2900",
+            "https://access.redhat.com/errata/RHSA-2026:2911",
+            "https://access.redhat.com/errata/RHSA-2026:2919",
+            "https://access.redhat.com/errata/RHSA-2026:2924",
+            "https://access.redhat.com/errata/RHSA-2026:2925",
+            "https://access.redhat.com/errata/RHSA-2026:2926",
+            "https://access.redhat.com/errata/RHSA-2026:3296",
+            "https://access.redhat.com/errata/RHSA-2026:33154",
+            "https://access.redhat.com/errata/RHSA-2026:3406",
+            "https://access.redhat.com/errata/RHSA-2026:3444",
+            "https://access.redhat.com/errata/RHSA-2026:3461",
+            "https://access.redhat.com/errata/RHSA-2026:3462",
+            "https://access.redhat.com/errata/RHSA-2026:3713",
+            "https://access.redhat.com/errata/RHSA-2026:3782",
+            "https://access.redhat.com/errata/RHSA-2026:3869",
+            "https://access.redhat.com/errata/RHSA-2026:3874",
+            "https://access.redhat.com/errata/RHSA-2026:3884",
+            "https://access.redhat.com/errata/RHSA-2026:3960",
+            "https://access.redhat.com/errata/RHSA-2026:4185",
+            "https://access.redhat.com/errata/RHSA-2026:4215",
+            "https://access.redhat.com/errata/RHSA-2026:4271",
+            "https://access.redhat.com/errata/RHSA-2026:4466",
+            "https://access.redhat.com/errata/RHSA-2026:4467",
+            "https://access.redhat.com/errata/RHSA-2026:5459",
+            "https://access.redhat.com/errata/RHSA-2026:6287",
+            "https://access.redhat.com/errata/RHSA-2026:6292",
+            "https://access.redhat.com/errata/RHSA-2026:8151",
+            "https://access.redhat.com/errata/RHSA-2026:8500",
+            "https://access.redhat.com/errata/RHSA-2026:8501",
+            "https://access.redhat.com/security/cve/CVE-2026-21441",
+            "https://bugzilla.redhat.com/2419455",
+            "https://bugzilla.redhat.com/2419467",
+            "https://bugzilla.redhat.com/2427726",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2419455",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2419467",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2427726",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-66418",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-66471",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-21441",
+            "https://errata.almalinux.org/9/ALSA-2026-1239.html",
+            "https://errata.rockylinux.org/RLSA-2026:1087",
+            "https://github.com/urllib3/urllib3",
+            "https://github.com/urllib3/urllib3/commit/8864ac407bba8607950025e0979c4c69bc7abc7b",
+            "https://github.com/urllib3/urllib3/security/advisories/GHSA-38jv-5279-wg99",
+            "https://linux.oracle.com/cve/CVE-2026-21441.html",
+            "https://linux.oracle.com/errata/ELSA-2026-1254.html",
+            "https://lists.debian.org/debian-lts-announce/2026/01/msg00017.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-21441",
+            "https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-21441.json",
+            "https://ubuntu.com/security/notices/USN-7955-1",
+            "https://ubuntu.com/security/notices/USN-7955-2",
+            "https://ubuntu.com/security/notices/USN-8010-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-21441"
+          ],
+          "PublishedDate": "2026-01-07T22:15:44.04Z",
+          "LastModifiedDate": "2026-07-03T13:16:59.14Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-44431",
+          "VendorIDs": [
+            "GHSA-qccp-gfcp-xxvc"
+          ],
+          "PkgName": "urllib3",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/urllib3@2.2.1",
+            "UID": "184922c046d6c6d8"
+          },
+          "InstalledVersion": "2.2.1",
+          "FixedVersion": "2.7.0",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-44431",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:6f6aab6024de198f8f3f3eb56898d104fa4c065564930b6d15b0171869aed8c1",
+          "Title": "urllib3: urllib3: Information disclosure via cross-origin redirects forwarding sensitive headers",
+          "Description": "urllib3 is an HTTP client library for Python. From 1.23 to before 2.7.0, cross-origin redirects followed from the low-level API via ProxyManager.connection_from_url().urlopen(..., assert_same_host=False) still forward these sensitive headers. This vulnerability is fixed in 2.7.0.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 2,
+            "azure": 3,
+            "ghsa": 3,
+            "nvd": 2,
+            "oracle-oval": 2,
+            "redhat": 2,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V40Vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+              "V3Score": 5.3,
+              "V40Score": 8.2
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:28159",
+            "https://access.redhat.com/security/cve/CVE-2026-44431",
+            "https://bugzilla.redhat.com/2477154",
+            "https://bugzilla.redhat.com/2477167",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2477154",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2477167",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-44431",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-44432",
+            "https://errata.almalinux.org/9/ALSA-2026-28159.html",
+            "https://errata.rockylinux.org/RLSA-2026:28158",
+            "https://github.com/urllib3/urllib3",
+            "https://github.com/urllib3/urllib3/security/advisories/GHSA-qccp-gfcp-xxvc",
+            "https://linux.oracle.com/cve/CVE-2026-44431.html",
+            "https://linux.oracle.com/errata/ELSA-2026-36732.html",
+            "https://lists.debian.org/debian-lts-announce/2026/06/msg00040.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-44431",
+            "https://ubuntu.com/security/notices/USN-8379-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-44431"
+          ],
+          "PublishedDate": "2026-05-13T16:16:57.15Z",
+          "LastModifiedDate": "2026-06-26T12:16:32.423Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-24049",
+          "VendorIDs": [
+            "GHSA-8rrh-rw8j-w5fx"
+          ],
+          "PkgName": "wheel",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/wheel@0.43.0",
+            "UID": "bce30712c1eb0327"
+          },
+          "InstalledVersion": "0.43.0",
+          "FixedVersion": "0.46.2",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-24049",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:d15a4368c35063c61c673809cc788b0ba867a3aa8b8e29854c3b9a92fc0c9021",
+          "Title": "wheel: wheel: Privilege Escalation or Arbitrary Code Execution via malicious wheel file unpacking",
+          "Description": "wheel is a command line tool for manipulating Python wheel files, as defined in PEP 427. In versions 0.40.0 through 0.46.1, the unpack function is vulnerable to file permission modification through mishandling of file permissions after extraction. The logic blindly trusts the filename from the archive header for the chmod operation, even though the extraction process itself might have sanitized the path. Attackers can craft a malicious wheel file that, when unpacked, changes the permissions of critical system files (e.g., /etc/passwd, SSH keys, config files), allowing for Privilege Escalation or arbitrary code execution by modifying now-writable scripts. This issue has been fixed in version 0.46.2.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-22",
+            "CWE-732"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "azure": 2,
+            "cbl-mariner": 2,
+            "ghsa": 3,
+            "nvd": 2,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H",
+              "V3Score": 7.1
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H",
+              "V3Score": 7.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:10184",
+            "https://access.redhat.com/errata/RHSA-2026:13545",
+            "https://access.redhat.com/errata/RHSA-2026:14020",
+            "https://access.redhat.com/errata/RHSA-2026:1504",
+            "https://access.redhat.com/errata/RHSA-2026:17599",
+            "https://access.redhat.com/errata/RHSA-2026:1902",
+            "https://access.redhat.com/errata/RHSA-2026:1939",
+            "https://access.redhat.com/errata/RHSA-2026:1942",
+            "https://access.redhat.com/errata/RHSA-2026:19712",
+            "https://access.redhat.com/errata/RHSA-2026:20089",
+            "https://access.redhat.com/errata/RHSA-2026:2090",
+            "https://access.redhat.com/errata/RHSA-2026:2106",
+            "https://access.redhat.com/errata/RHSA-2026:2139",
+            "https://access.redhat.com/errata/RHSA-2026:2675",
+            "https://access.redhat.com/errata/RHSA-2026:2681",
+            "https://access.redhat.com/errata/RHSA-2026:2694",
+            "https://access.redhat.com/errata/RHSA-2026:2695",
+            "https://access.redhat.com/errata/RHSA-2026:2710",
+            "https://access.redhat.com/errata/RHSA-2026:2754",
+            "https://access.redhat.com/errata/RHSA-2026:2762",
+            "https://access.redhat.com/errata/RHSA-2026:2823",
+            "https://access.redhat.com/errata/RHSA-2026:2865",
+            "https://access.redhat.com/errata/RHSA-2026:2866",
+            "https://access.redhat.com/errata/RHSA-2026:2900",
+            "https://access.redhat.com/errata/RHSA-2026:2925",
+            "https://access.redhat.com/errata/RHSA-2026:3461",
+            "https://access.redhat.com/errata/RHSA-2026:3462",
+            "https://access.redhat.com/errata/RHSA-2026:3713",
+            "https://access.redhat.com/errata/RHSA-2026:3782",
+            "https://access.redhat.com/errata/RHSA-2026:3958",
+            "https://access.redhat.com/errata/RHSA-2026:3959",
+            "https://access.redhat.com/errata/RHSA-2026:3960",
+            "https://access.redhat.com/errata/RHSA-2026:4185",
+            "https://access.redhat.com/errata/RHSA-2026:4215",
+            "https://access.redhat.com/errata/RHSA-2026:4271",
+            "https://access.redhat.com/errata/RHSA-2026:4942",
+            "https://access.redhat.com/errata/RHSA-2026:5119",
+            "https://access.redhat.com/errata/RHSA-2026:6192",
+            "https://access.redhat.com/errata/RHSA-2026:6555",
+            "https://access.redhat.com/errata/RHSA-2026:6562",
+            "https://access.redhat.com/errata/RHSA-2026:6565",
+            "https://access.redhat.com/errata/RHSA-2026:7250",
+            "https://access.redhat.com/security/cve/CVE-2026-24049",
+            "https://bugzilla.redhat.com/2431959",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2431959",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-24049",
+            "https://errata.almalinux.org/9/ALSA-2026-1939.html",
+            "https://errata.rockylinux.org/RLSA-2026:1939",
+            "https://github.com/pypa/wheel",
+            "https://github.com/pypa/wheel/commit/7a7d2de96b22a9adf9208afcc9547e1001569fef",
+            "https://github.com/pypa/wheel/commit/934fe177ff912c8e03d5ae951d3805e1fd90ba5e",
+            "https://github.com/pypa/wheel/releases/tag/0.46.2",
+            "https://github.com/pypa/wheel/security/advisories/GHSA-8rrh-rw8j-w5fx",
+            "https://linux.oracle.com/cve/CVE-2026-24049.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2090.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-24049",
+            "https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-24049.json",
+            "https://ubuntu.com/security/notices/USN-8221-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-24049"
+          ],
+          "PublishedDate": "2026-01-22T05:16:23.157Z",
+          "LastModifiedDate": "2026-07-01T13:16:49.493Z"
+        }
+      ]
+    },
+    {
+      "Target": "eventis/frontend/package-lock.json",
+      "Class": "lang-pkgs",
+      "Type": "npm",
+      "Packages": [
+        {
+          "ID": "@tailwindcss/vite@4.3.0",
+          "Name": "@tailwindcss/vite",
+          "Identifier": {
+            "PURL": "pkg:npm/%40tailwindcss/vite@4.3.0",
+            "UID": "f60336116953c918"
+          },
+          "Version": "4.3.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "@tailwindcss/node@4.3.0",
+            "@tailwindcss/oxide@4.3.0",
+            "tailwindcss@4.3.0",
+            "vite@8.1.4"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1109,
+              "EndLine": 1122
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "lucide-react@1.17.0",
+          "Name": "lucide-react",
+          "Identifier": {
+            "PURL": "pkg:npm/lucide-react@1.17.0",
+            "UID": "58407135043945c0"
+          },
+          "Version": "1.17.0",
+          "Licenses": [
+            "ISC"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "react@19.2.6"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3436,
+              "EndLine": 3444
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "react@19.2.6",
+          "Name": "react",
+          "Identifier": {
+            "PURL": "pkg:npm/react@19.2.6",
+            "UID": "31efd6d90f92074d"
+          },
+          "Version": "19.2.6",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 3862,
+              "EndLine": 3870
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "react-dom@19.2.6",
+          "Name": "react-dom",
+          "Identifier": {
+            "PURL": "pkg:npm/react-dom@19.2.6",
+            "UID": "f77471b4e21c277a"
+          },
+          "Version": "19.2.6",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "react@19.2.6",
+            "scheduler@0.27.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3871,
+              "EndLine": 3882
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "react-router-dom@7.17.0",
+          "Name": "react-router-dom",
+          "Identifier": {
+            "PURL": "pkg:npm/react-router-dom@7.17.0",
+            "UID": "20c59fd986c77915"
+          },
+          "Version": "7.17.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "react-dom@19.2.6",
+            "react-router@7.17.0",
+            "react@19.2.6"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3904,
+              "EndLine": 3919
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "tailwindcss@4.3.0",
+          "Name": "tailwindcss",
+          "Identifier": {
+            "PURL": "pkg:npm/tailwindcss@4.3.0",
+            "UID": "7774a6aba44e374b"
+          },
+          "Version": "4.3.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 4353,
+              "EndLine": 4358
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "vite@8.1.4",
+          "Name": "vite",
+          "Identifier": {
+            "PURL": "pkg:npm/vite@8.1.4",
+            "UID": "5082590c8791de84"
+          },
+          "Version": "8.1.4",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "fsevents@2.3.3",
+            "jiti@2.7.0",
+            "lightningcss@1.32.0",
+            "picomatch@4.0.5",
+            "postcss@8.5.16",
+            "rolldown@1.1.5",
+            "tinyglobby@0.2.17"
+          ],
+          "Locations": [
+            {
+              "StartLine": 4577,
+              "EndLine": 4653
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@emnapi/core@1.11.1",
+          "Name": "@emnapi/core",
+          "Identifier": {
+            "PURL": "pkg:npm/%40emnapi/core@1.11.1",
+            "UID": "ccf35e78b84a7ed8"
+          },
+          "Version": "1.11.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@emnapi/wasi-threads@1.2.2",
+            "tslib@2.8.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 321,
+              "EndLine": 331
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@emnapi/runtime@1.11.1",
+          "Name": "@emnapi/runtime",
+          "Identifier": {
+            "PURL": "pkg:npm/%40emnapi/runtime@1.11.1",
+            "UID": "6a9bbe737162282a"
+          },
+          "Version": "1.11.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "tslib@2.8.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 332,
+              "EndLine": 341
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@emnapi/wasi-threads@1.2.2",
+          "Name": "@emnapi/wasi-threads",
+          "Identifier": {
+            "PURL": "pkg:npm/%40emnapi/wasi-threads@1.2.2",
+            "UID": "79ff74ebd06d1460"
+          },
+          "Version": "1.2.2",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "tslib@2.8.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 342,
+              "EndLine": 351
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@jridgewell/gen-mapping@0.3.13",
+          "Name": "@jridgewell/gen-mapping",
+          "Identifier": {
+            "PURL": "pkg:npm/%40jridgewell/gen-mapping@0.3.13",
+            "UID": "b7aad06ba8132067"
+          },
+          "Version": "0.3.13",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@jridgewell/sourcemap-codec@1.5.5",
+            "@jridgewell/trace-mapping@0.3.31"
+          ],
+          "Locations": [
+            {
+              "StartLine": 546,
+              "EndLine": 555
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@jridgewell/remapping@2.3.5",
+          "Name": "@jridgewell/remapping",
+          "Identifier": {
+            "PURL": "pkg:npm/%40jridgewell/remapping@2.3.5",
+            "UID": "198a151f24d43b91"
+          },
+          "Version": "2.3.5",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@jridgewell/gen-mapping@0.3.13",
+            "@jridgewell/trace-mapping@0.3.31"
+          ],
+          "Locations": [
+            {
+              "StartLine": 556,
+              "EndLine": 565
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@jridgewell/resolve-uri@3.1.2",
+          "Name": "@jridgewell/resolve-uri",
+          "Identifier": {
+            "PURL": "pkg:npm/%40jridgewell/resolve-uri@3.1.2",
+            "UID": "a5eee2f90b880ee5"
+          },
+          "Version": "3.1.2",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 566,
+              "EndLine": 574
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@jridgewell/sourcemap-codec@1.5.5",
+          "Name": "@jridgewell/sourcemap-codec",
+          "Identifier": {
+            "PURL": "pkg:npm/%40jridgewell/sourcemap-codec@1.5.5",
+            "UID": "cda30e21c93dd3fb"
+          },
+          "Version": "1.5.5",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 575,
+              "EndLine": 580
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@jridgewell/trace-mapping@0.3.31",
+          "Name": "@jridgewell/trace-mapping",
+          "Identifier": {
+            "PURL": "pkg:npm/%40jridgewell/trace-mapping@0.3.31",
+            "UID": "1a537cc6d0b5e760"
+          },
+          "Version": "0.3.31",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@jridgewell/resolve-uri@3.1.2",
+            "@jridgewell/sourcemap-codec@1.5.5"
+          ],
+          "Locations": [
+            {
+              "StartLine": 581,
+              "EndLine": 590
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@napi-rs/wasm-runtime@1.1.6",
+          "Name": "@napi-rs/wasm-runtime",
+          "Identifier": {
+            "PURL": "pkg:npm/%40napi-rs/wasm-runtime@1.1.6",
+            "UID": "a8a0947edecedd77"
+          },
+          "Version": "1.1.6",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@emnapi/core@1.11.1",
+            "@emnapi/runtime@1.11.1",
+            "@tybys/wasm-util@0.10.3"
+          ],
+          "Locations": [
+            {
+              "StartLine": 591,
+              "EndLine": 608
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@oxc-project/types@0.139.0",
+          "Name": "@oxc-project/types",
+          "Identifier": {
+            "PURL": "pkg:npm/%40oxc-project/types@0.139.0",
+            "UID": "ea9c2e600650959a"
+          },
+          "Version": "0.139.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 609,
+              "EndLine": 617
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@rolldown/binding-android-arm64@1.1.5",
+          "Name": "@rolldown/binding-android-arm64",
+          "Identifier": {
+            "PURL": "pkg:npm/%40rolldown/binding-android-arm64@1.1.5",
+            "UID": "4248fb1c9a439f7b"
+          },
+          "Version": "1.1.5",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 618,
+              "EndLine": 633
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@rolldown/binding-darwin-arm64@1.1.5",
+          "Name": "@rolldown/binding-darwin-arm64",
+          "Identifier": {
+            "PURL": "pkg:npm/%40rolldown/binding-darwin-arm64@1.1.5",
+            "UID": "9cbcf155291f8dc4"
+          },
+          "Version": "1.1.5",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 634,
+              "EndLine": 649
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@rolldown/binding-darwin-x64@1.1.5",
+          "Name": "@rolldown/binding-darwin-x64",
+          "Identifier": {
+            "PURL": "pkg:npm/%40rolldown/binding-darwin-x64@1.1.5",
+            "UID": "2fae7a77645ad295"
+          },
+          "Version": "1.1.5",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 650,
+              "EndLine": 665
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@rolldown/binding-freebsd-x64@1.1.5",
+          "Name": "@rolldown/binding-freebsd-x64",
+          "Identifier": {
+            "PURL": "pkg:npm/%40rolldown/binding-freebsd-x64@1.1.5",
+            "UID": "621147c5df905f8f"
+          },
+          "Version": "1.1.5",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 666,
+              "EndLine": 681
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@rolldown/binding-linux-arm-gnueabihf@1.1.5",
+          "Name": "@rolldown/binding-linux-arm-gnueabihf",
+          "Identifier": {
+            "PURL": "pkg:npm/%40rolldown/binding-linux-arm-gnueabihf@1.1.5",
+            "UID": "a0b2657039c1f27d"
+          },
+          "Version": "1.1.5",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 682,
+              "EndLine": 697
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@rolldown/binding-linux-arm64-gnu@1.1.5",
+          "Name": "@rolldown/binding-linux-arm64-gnu",
+          "Identifier": {
+            "PURL": "pkg:npm/%40rolldown/binding-linux-arm64-gnu@1.1.5",
+            "UID": "5591a0531c4b25f5"
+          },
+          "Version": "1.1.5",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 698,
+              "EndLine": 713
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@rolldown/binding-linux-arm64-musl@1.1.5",
+          "Name": "@rolldown/binding-linux-arm64-musl",
+          "Identifier": {
+            "PURL": "pkg:npm/%40rolldown/binding-linux-arm64-musl@1.1.5",
+            "UID": "3b06a4b49f015c4c"
+          },
+          "Version": "1.1.5",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 714,
+              "EndLine": 729
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@rolldown/binding-linux-ppc64-gnu@1.1.5",
+          "Name": "@rolldown/binding-linux-ppc64-gnu",
+          "Identifier": {
+            "PURL": "pkg:npm/%40rolldown/binding-linux-ppc64-gnu@1.1.5",
+            "UID": "9e195e05d331f6c2"
+          },
+          "Version": "1.1.5",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 730,
+              "EndLine": 745
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@rolldown/binding-linux-s390x-gnu@1.1.5",
+          "Name": "@rolldown/binding-linux-s390x-gnu",
+          "Identifier": {
+            "PURL": "pkg:npm/%40rolldown/binding-linux-s390x-gnu@1.1.5",
+            "UID": "e4039072e050f549"
+          },
+          "Version": "1.1.5",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 746,
+              "EndLine": 761
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@rolldown/binding-linux-x64-gnu@1.1.5",
+          "Name": "@rolldown/binding-linux-x64-gnu",
+          "Identifier": {
+            "PURL": "pkg:npm/%40rolldown/binding-linux-x64-gnu@1.1.5",
+            "UID": "715ab50d5cfc1223"
+          },
+          "Version": "1.1.5",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 762,
+              "EndLine": 777
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@rolldown/binding-linux-x64-musl@1.1.5",
+          "Name": "@rolldown/binding-linux-x64-musl",
+          "Identifier": {
+            "PURL": "pkg:npm/%40rolldown/binding-linux-x64-musl@1.1.5",
+            "UID": "9a5ba10b4e5bf4c7"
+          },
+          "Version": "1.1.5",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 778,
+              "EndLine": 793
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@rolldown/binding-openharmony-arm64@1.1.5",
+          "Name": "@rolldown/binding-openharmony-arm64",
+          "Identifier": {
+            "PURL": "pkg:npm/%40rolldown/binding-openharmony-arm64@1.1.5",
+            "UID": "33e3f36aa64615ae"
+          },
+          "Version": "1.1.5",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 794,
+              "EndLine": 809
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@rolldown/binding-wasm32-wasi@1.1.5",
+          "Name": "@rolldown/binding-wasm32-wasi",
+          "Identifier": {
+            "PURL": "pkg:npm/%40rolldown/binding-wasm32-wasi@1.1.5",
+            "UID": "ed3cf3c04fdcaca0"
+          },
+          "Version": "1.1.5",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@emnapi/core@1.11.1",
+            "@emnapi/runtime@1.11.1",
+            "@napi-rs/wasm-runtime@1.1.6"
+          ],
+          "Locations": [
+            {
+              "StartLine": 810,
+              "EndLine": 827
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@rolldown/binding-win32-arm64-msvc@1.1.5",
+          "Name": "@rolldown/binding-win32-arm64-msvc",
+          "Identifier": {
+            "PURL": "pkg:npm/%40rolldown/binding-win32-arm64-msvc@1.1.5",
+            "UID": "a4dedba16bd2068d"
+          },
+          "Version": "1.1.5",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 828,
+              "EndLine": 843
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@rolldown/binding-win32-x64-msvc@1.1.5",
+          "Name": "@rolldown/binding-win32-x64-msvc",
+          "Identifier": {
+            "PURL": "pkg:npm/%40rolldown/binding-win32-x64-msvc@1.1.5",
+            "UID": "9f8779f745ae3e25"
+          },
+          "Version": "1.1.5",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 844,
+              "EndLine": 859
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@rolldown/pluginutils@1.0.1",
+          "Name": "@rolldown/pluginutils",
+          "Identifier": {
+            "PURL": "pkg:npm/%40rolldown/pluginutils@1.0.1",
+            "UID": "b2715f1427751206"
+          },
+          "Version": "1.0.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 860,
+              "EndLine": 865
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@tailwindcss/node@4.3.0",
+          "Name": "@tailwindcss/node",
+          "Identifier": {
+            "PURL": "pkg:npm/%40tailwindcss/node@4.3.0",
+            "UID": "6068396969013038"
+          },
+          "Version": "4.3.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@jridgewell/remapping@2.3.5",
+            "enhanced-resolve@5.22.2",
+            "jiti@2.7.0",
+            "lightningcss@1.32.0",
+            "magic-string@0.30.21",
+            "source-map-js@1.2.1",
+            "tailwindcss@4.3.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 866,
+              "EndLine": 880
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@tailwindcss/oxide@4.3.0",
+          "Name": "@tailwindcss/oxide",
+          "Identifier": {
+            "PURL": "pkg:npm/%40tailwindcss/oxide@4.3.0",
+            "UID": "8a8f3e94df24d7ce"
+          },
+          "Version": "4.3.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@tailwindcss/oxide-android-arm64@4.3.0",
+            "@tailwindcss/oxide-darwin-arm64@4.3.0",
+            "@tailwindcss/oxide-darwin-x64@4.3.0",
+            "@tailwindcss/oxide-freebsd-x64@4.3.0",
+            "@tailwindcss/oxide-linux-arm-gnueabihf@4.3.0",
+            "@tailwindcss/oxide-linux-arm64-gnu@4.3.0",
+            "@tailwindcss/oxide-linux-arm64-musl@4.3.0",
+            "@tailwindcss/oxide-linux-x64-gnu@4.3.0",
+            "@tailwindcss/oxide-linux-x64-musl@4.3.0",
+            "@tailwindcss/oxide-wasm32-wasi@4.3.0",
+            "@tailwindcss/oxide-win32-arm64-msvc@4.3.0",
+            "@tailwindcss/oxide-win32-x64-msvc@4.3.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 881,
+              "EndLine": 903
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@tailwindcss/oxide-android-arm64@4.3.0",
+          "Name": "@tailwindcss/oxide-android-arm64",
+          "Identifier": {
+            "PURL": "pkg:npm/%40tailwindcss/oxide-android-arm64@4.3.0",
+            "UID": "3fa877bcd8ce36d4"
+          },
+          "Version": "4.3.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 904,
+              "EndLine": 919
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@tailwindcss/oxide-darwin-arm64@4.3.0",
+          "Name": "@tailwindcss/oxide-darwin-arm64",
+          "Identifier": {
+            "PURL": "pkg:npm/%40tailwindcss/oxide-darwin-arm64@4.3.0",
+            "UID": "e8db3d3efb23babc"
+          },
+          "Version": "4.3.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 920,
+              "EndLine": 935
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@tailwindcss/oxide-darwin-x64@4.3.0",
+          "Name": "@tailwindcss/oxide-darwin-x64",
+          "Identifier": {
+            "PURL": "pkg:npm/%40tailwindcss/oxide-darwin-x64@4.3.0",
+            "UID": "4e910d9dda8aca35"
+          },
+          "Version": "4.3.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 936,
+              "EndLine": 951
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@tailwindcss/oxide-freebsd-x64@4.3.0",
+          "Name": "@tailwindcss/oxide-freebsd-x64",
+          "Identifier": {
+            "PURL": "pkg:npm/%40tailwindcss/oxide-freebsd-x64@4.3.0",
+            "UID": "ecfecc3e08420a59"
+          },
+          "Version": "4.3.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 952,
+              "EndLine": 967
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@tailwindcss/oxide-linux-arm-gnueabihf@4.3.0",
+          "Name": "@tailwindcss/oxide-linux-arm-gnueabihf",
+          "Identifier": {
+            "PURL": "pkg:npm/%40tailwindcss/oxide-linux-arm-gnueabihf@4.3.0",
+            "UID": "cfba89a9eae76d81"
+          },
+          "Version": "4.3.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 968,
+              "EndLine": 983
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@tailwindcss/oxide-linux-arm64-gnu@4.3.0",
+          "Name": "@tailwindcss/oxide-linux-arm64-gnu",
+          "Identifier": {
+            "PURL": "pkg:npm/%40tailwindcss/oxide-linux-arm64-gnu@4.3.0",
+            "UID": "2d083177a9f371f1"
+          },
+          "Version": "4.3.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 984,
+              "EndLine": 999
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@tailwindcss/oxide-linux-arm64-musl@4.3.0",
+          "Name": "@tailwindcss/oxide-linux-arm64-musl",
+          "Identifier": {
+            "PURL": "pkg:npm/%40tailwindcss/oxide-linux-arm64-musl@4.3.0",
+            "UID": "a327339914fd6d10"
+          },
+          "Version": "4.3.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1000,
+              "EndLine": 1015
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@tailwindcss/oxide-linux-x64-gnu@4.3.0",
+          "Name": "@tailwindcss/oxide-linux-x64-gnu",
+          "Identifier": {
+            "PURL": "pkg:npm/%40tailwindcss/oxide-linux-x64-gnu@4.3.0",
+            "UID": "2111543b3c9b7f5b"
+          },
+          "Version": "4.3.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1016,
+              "EndLine": 1031
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@tailwindcss/oxide-linux-x64-musl@4.3.0",
+          "Name": "@tailwindcss/oxide-linux-x64-musl",
+          "Identifier": {
+            "PURL": "pkg:npm/%40tailwindcss/oxide-linux-x64-musl@4.3.0",
+            "UID": "fef85fbdd1e2a19a"
+          },
+          "Version": "4.3.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1032,
+              "EndLine": 1047
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@tailwindcss/oxide-wasm32-wasi@4.3.0",
+          "Name": "@tailwindcss/oxide-wasm32-wasi",
+          "Identifier": {
+            "PURL": "pkg:npm/%40tailwindcss/oxide-wasm32-wasi@4.3.0",
+            "UID": "27f3d4d9928b147e"
+          },
+          "Version": "4.3.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@emnapi/core@1.11.1",
+            "@emnapi/runtime@1.11.1",
+            "@emnapi/wasi-threads@1.2.2",
+            "@napi-rs/wasm-runtime@1.1.6",
+            "@tybys/wasm-util@0.10.3",
+            "tslib@2.8.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1048,
+              "EndLine": 1076
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@tailwindcss/oxide-win32-arm64-msvc@4.3.0",
+          "Name": "@tailwindcss/oxide-win32-arm64-msvc",
+          "Identifier": {
+            "PURL": "pkg:npm/%40tailwindcss/oxide-win32-arm64-msvc@4.3.0",
+            "UID": "5519de2c24cce83d"
+          },
+          "Version": "4.3.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1077,
+              "EndLine": 1092
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@tailwindcss/oxide-win32-x64-msvc@4.3.0",
+          "Name": "@tailwindcss/oxide-win32-x64-msvc",
+          "Identifier": {
+            "PURL": "pkg:npm/%40tailwindcss/oxide-win32-x64-msvc@4.3.0",
+            "UID": "353bf3938c27e3a9"
+          },
+          "Version": "4.3.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1093,
+              "EndLine": 1108
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "@tybys/wasm-util@0.10.3",
+          "Name": "@tybys/wasm-util",
+          "Identifier": {
+            "PURL": "pkg:npm/%40tybys/wasm-util@0.10.3",
+            "UID": "6c0ceb0b34f02b15"
+          },
+          "Version": "0.10.3",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "tslib@2.8.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1123,
+              "EndLine": 1132
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "cookie@1.1.1",
+          "Name": "cookie",
+          "Identifier": {
+            "PURL": "pkg:npm/cookie@1.1.1",
+            "UID": "5cf8ed2588d29fe3"
+          },
+          "Version": "1.1.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1780,
+              "EndLine": 1791
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "detect-libc@2.1.2",
+          "Name": "detect-libc",
+          "Identifier": {
+            "PURL": "pkg:npm/detect-libc@2.1.2",
+            "UID": "f4ef287b25f04599"
+          },
+          "Version": "2.1.2",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1938,
+              "EndLine": 1946
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "enhanced-resolve@5.22.2",
+          "Name": "enhanced-resolve",
+          "Identifier": {
+            "PURL": "pkg:npm/enhanced-resolve@5.22.2",
+            "UID": "8ddcb72816f8dd25"
+          },
+          "Version": "5.22.2",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "graceful-fs@4.2.11",
+            "tapable@2.3.3"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1997,
+              "EndLine": 2009
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "fdir@6.5.0",
+          "Name": "fdir",
+          "Identifier": {
+            "PURL": "pkg:npm/fdir@6.5.0",
+            "UID": "ffd5d3b03d1432c1"
+          },
+          "Version": "6.5.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "picomatch@4.0.5"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2366,
+              "EndLine": 2382
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "fsevents@2.3.3",
+          "Name": "fsevents",
+          "Identifier": {
+            "PURL": "pkg:npm/fsevents@2.3.3",
+            "UID": "a5f7ef574347939c"
+          },
+          "Version": "2.3.3",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 2477,
+              "EndLine": 2490
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "graceful-fs@4.2.11",
+          "Name": "graceful-fs",
+          "Identifier": {
+            "PURL": "pkg:npm/graceful-fs@4.2.11",
+            "UID": "bcc47574391643e3"
+          },
+          "Version": "4.2.11",
+          "Licenses": [
+            "ISC"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 2644,
+              "EndLine": 2649
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "jiti@2.7.0",
+          "Name": "jiti",
+          "Identifier": {
+            "PURL": "pkg:npm/jiti@2.7.0",
+            "UID": "9e88e344cb25b3ed"
+          },
+          "Version": "2.7.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 2925,
+              "EndLine": 2933
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "lightningcss@1.32.0",
+          "Name": "lightningcss",
+          "Identifier": {
+            "PURL": "pkg:npm/lightningcss@1.32.0",
+            "UID": "ff03501500b4186"
+          },
+          "Version": "1.32.0",
+          "Licenses": [
+            "MPL-2.0"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "detect-libc@2.1.2",
+            "lightningcss-android-arm64@1.32.0",
+            "lightningcss-darwin-arm64@1.32.0",
+            "lightningcss-darwin-x64@1.32.0",
+            "lightningcss-freebsd-x64@1.32.0",
+            "lightningcss-linux-arm-gnueabihf@1.32.0",
+            "lightningcss-linux-arm64-gnu@1.32.0",
+            "lightningcss-linux-arm64-musl@1.32.0",
+            "lightningcss-linux-x64-gnu@1.32.0",
+            "lightningcss-linux-x64-musl@1.32.0",
+            "lightningcss-win32-arm64-msvc@1.32.0",
+            "lightningcss-win32-x64-msvc@1.32.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3062,
+              "EndLine": 3090
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "lightningcss-android-arm64@1.32.0",
+          "Name": "lightningcss-android-arm64",
+          "Identifier": {
+            "PURL": "pkg:npm/lightningcss-android-arm64@1.32.0",
+            "UID": "15d39bfdecdcd3ea"
+          },
+          "Version": "1.32.0",
+          "Licenses": [
+            "MPL-2.0"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3091,
+              "EndLine": 3110
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "lightningcss-darwin-arm64@1.32.0",
+          "Name": "lightningcss-darwin-arm64",
+          "Identifier": {
+            "PURL": "pkg:npm/lightningcss-darwin-arm64@1.32.0",
+            "UID": "3af1a412707053f2"
+          },
+          "Version": "1.32.0",
+          "Licenses": [
+            "MPL-2.0"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3111,
+              "EndLine": 3130
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "lightningcss-darwin-x64@1.32.0",
+          "Name": "lightningcss-darwin-x64",
+          "Identifier": {
+            "PURL": "pkg:npm/lightningcss-darwin-x64@1.32.0",
+            "UID": "3c80c5656c0f3fc2"
+          },
+          "Version": "1.32.0",
+          "Licenses": [
+            "MPL-2.0"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3131,
+              "EndLine": 3150
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "lightningcss-freebsd-x64@1.32.0",
+          "Name": "lightningcss-freebsd-x64",
+          "Identifier": {
+            "PURL": "pkg:npm/lightningcss-freebsd-x64@1.32.0",
+            "UID": "e7bcc9a822b3d4c0"
+          },
+          "Version": "1.32.0",
+          "Licenses": [
+            "MPL-2.0"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3151,
+              "EndLine": 3170
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "lightningcss-linux-arm-gnueabihf@1.32.0",
+          "Name": "lightningcss-linux-arm-gnueabihf",
+          "Identifier": {
+            "PURL": "pkg:npm/lightningcss-linux-arm-gnueabihf@1.32.0",
+            "UID": "c0d47c6f0984bfcd"
+          },
+          "Version": "1.32.0",
+          "Licenses": [
+            "MPL-2.0"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3171,
+              "EndLine": 3190
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "lightningcss-linux-arm64-gnu@1.32.0",
+          "Name": "lightningcss-linux-arm64-gnu",
+          "Identifier": {
+            "PURL": "pkg:npm/lightningcss-linux-arm64-gnu@1.32.0",
+            "UID": "7d9663b116d1be61"
+          },
+          "Version": "1.32.0",
+          "Licenses": [
+            "MPL-2.0"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3191,
+              "EndLine": 3210
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "lightningcss-linux-arm64-musl@1.32.0",
+          "Name": "lightningcss-linux-arm64-musl",
+          "Identifier": {
+            "PURL": "pkg:npm/lightningcss-linux-arm64-musl@1.32.0",
+            "UID": "af2eda8bf3666362"
+          },
+          "Version": "1.32.0",
+          "Licenses": [
+            "MPL-2.0"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3211,
+              "EndLine": 3230
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "lightningcss-linux-x64-gnu@1.32.0",
+          "Name": "lightningcss-linux-x64-gnu",
+          "Identifier": {
+            "PURL": "pkg:npm/lightningcss-linux-x64-gnu@1.32.0",
+            "UID": "202d00e3f871ccf6"
+          },
+          "Version": "1.32.0",
+          "Licenses": [
+            "MPL-2.0"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3231,
+              "EndLine": 3250
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "lightningcss-linux-x64-musl@1.32.0",
+          "Name": "lightningcss-linux-x64-musl",
+          "Identifier": {
+            "PURL": "pkg:npm/lightningcss-linux-x64-musl@1.32.0",
+            "UID": "f15cbf208824f3e0"
+          },
+          "Version": "1.32.0",
+          "Licenses": [
+            "MPL-2.0"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3251,
+              "EndLine": 3270
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "lightningcss-win32-arm64-msvc@1.32.0",
+          "Name": "lightningcss-win32-arm64-msvc",
+          "Identifier": {
+            "PURL": "pkg:npm/lightningcss-win32-arm64-msvc@1.32.0",
+            "UID": "a786faeefbf483c"
+          },
+          "Version": "1.32.0",
+          "Licenses": [
+            "MPL-2.0"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3271,
+              "EndLine": 3290
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "lightningcss-win32-x64-msvc@1.32.0",
+          "Name": "lightningcss-win32-x64-msvc",
+          "Identifier": {
+            "PURL": "pkg:npm/lightningcss-win32-x64-msvc@1.32.0",
+            "UID": "1b1de871f616fef8"
+          },
+          "Version": "1.32.0",
+          "Licenses": [
+            "MPL-2.0"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3291,
+              "EndLine": 3310
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "magic-string@0.30.21",
+          "Name": "magic-string",
+          "Identifier": {
+            "PURL": "pkg:npm/magic-string@0.30.21",
+            "UID": "74ae03bc6f99d9e6"
+          },
+          "Version": "0.30.21",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@jridgewell/sourcemap-codec@1.5.5"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3445,
+              "EndLine": 3453
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "nanoid@3.3.15",
+          "Name": "nanoid",
+          "Identifier": {
+            "PURL": "pkg:npm/nanoid@3.3.15",
+            "UID": "bcf8cfad4e4097cc"
+          },
+          "Version": "3.3.15",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3550,
+              "EndLine": 3567
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "picocolors@1.1.1",
+          "Name": "picocolors",
+          "Identifier": {
+            "PURL": "pkg:npm/picocolors@1.1.1",
+            "UID": "1586b80f2914b5df"
+          },
+          "Version": "1.1.1",
+          "Licenses": [
+            "ISC"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3728,
+              "EndLine": 3733
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "picomatch@4.0.5",
+          "Name": "picomatch",
+          "Identifier": {
+            "PURL": "pkg:npm/picomatch@4.0.5",
+            "UID": "fec50fc1d6470d10"
+          },
+          "Version": "4.0.5",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3734,
+              "EndLine": 3745
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "postcss@8.5.16",
+          "Name": "postcss",
+          "Identifier": {
+            "PURL": "pkg:npm/postcss@8.5.16",
+            "UID": "b946c5ca86bde1bd"
+          },
+          "Version": "8.5.16",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "nanoid@3.3.15",
+            "picocolors@1.1.1",
+            "source-map-js@1.2.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3756,
+              "EndLine": 3783
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "react-router@7.17.0",
+          "Name": "react-router",
+          "Identifier": {
+            "PURL": "pkg:npm/react-router@7.17.0",
+            "UID": "eb978738e373376a"
+          },
+          "Version": "7.17.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "cookie@1.1.1",
+            "react-dom@19.2.6",
+            "react@19.2.6",
+            "set-cookie-parser@2.7.2"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3883,
+              "EndLine": 3903
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "rolldown@1.1.5",
+          "Name": "rolldown",
+          "Identifier": {
+            "PURL": "pkg:npm/rolldown@1.1.5",
+            "UID": "d8d225a4fd5b2e02"
+          },
+          "Version": "1.1.5",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "@oxc-project/types@0.139.0",
+            "@rolldown/binding-android-arm64@1.1.5",
+            "@rolldown/binding-darwin-arm64@1.1.5",
+            "@rolldown/binding-darwin-x64@1.1.5",
+            "@rolldown/binding-freebsd-x64@1.1.5",
+            "@rolldown/binding-linux-arm-gnueabihf@1.1.5",
+            "@rolldown/binding-linux-arm64-gnu@1.1.5",
+            "@rolldown/binding-linux-arm64-musl@1.1.5",
+            "@rolldown/binding-linux-ppc64-gnu@1.1.5",
+            "@rolldown/binding-linux-s390x-gnu@1.1.5",
+            "@rolldown/binding-linux-x64-gnu@1.1.5",
+            "@rolldown/binding-linux-x64-musl@1.1.5",
+            "@rolldown/binding-openharmony-arm64@1.1.5",
+            "@rolldown/binding-wasm32-wasi@1.1.5",
+            "@rolldown/binding-win32-arm64-msvc@1.1.5",
+            "@rolldown/binding-win32-x64-msvc@1.1.5",
+            "@rolldown/pluginutils@1.0.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3983,
+              "EndLine": 4015
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "scheduler@0.27.0",
+          "Name": "scheduler",
+          "Identifier": {
+            "PURL": "pkg:npm/scheduler@0.27.0",
+            "UID": "7aabf571c81a8701"
+          },
+          "Version": "0.27.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 4044,
+              "EndLine": 4049
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "set-cookie-parser@2.7.2",
+          "Name": "set-cookie-parser",
+          "Identifier": {
+            "PURL": "pkg:npm/set-cookie-parser@2.7.2",
+            "UID": "d832508ee50f21ec"
+          },
+          "Version": "2.7.2",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 4060,
+              "EndLine": 4064
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "source-map-js@1.2.1",
+          "Name": "source-map-js",
+          "Identifier": {
+            "PURL": "pkg:npm/source-map-js@1.2.1",
+            "UID": "22cda6b72eae3746"
+          },
+          "Version": "1.2.1",
+          "Licenses": [
+            "BSD-3-Clause"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 4201,
+              "EndLine": 4209
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "tapable@2.3.3",
+          "Name": "tapable",
+          "Identifier": {
+            "PURL": "pkg:npm/tapable@2.3.3",
+            "UID": "22eac9ee96c44266"
+          },
+          "Version": "2.3.3",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 4359,
+              "EndLine": 4371
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "tinyglobby@0.2.17",
+          "Name": "tinyglobby",
+          "Identifier": {
+            "PURL": "pkg:npm/tinyglobby@0.2.17",
+            "UID": "f9dfea44c459670e"
+          },
+          "Version": "0.2.17",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "fdir@6.5.0",
+            "picomatch@4.0.5"
+          ],
+          "Locations": [
+            {
+              "StartLine": 4382,
+              "EndLine": 4397
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "tslib@2.8.1",
+          "Name": "tslib",
+          "Identifier": {
+            "PURL": "pkg:npm/tslib@2.8.1",
+            "UID": "2204dcdd04abe820"
+          },
+          "Version": "2.8.1",
+          "Licenses": [
+            "0BSD"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 4451,
+              "EndLine": 4457
+            }
+          ],
+          "AnalyzedBy": "npm"
+        }
+      ]
+    }
+  ]
+}
