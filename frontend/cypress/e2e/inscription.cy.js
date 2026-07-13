@@ -1,7 +1,6 @@
 describe("Inscription à un événement", () => {
-
     beforeEach(() => {
-        cy.viewport(1440, 900)   // force la vue desktop
+        cy.viewport(1440, 900)
     })
 
     const evenementPublie = {
@@ -29,13 +28,11 @@ describe("Inscription à un événement", () => {
         cy.visit('/evenements/1')
         cy.wait('@getEvenement')
         cy.wait(1500)
-
         cy.get('input[placeholder="Votre nom et prénom"]').type('Awa Koné', { delay: 200 })
         cy.wait(1500)
         cy.get('input[placeholder="Votre adresse email"]').type('awa@example.com', { delay: 200 })
         cy.wait(1500)
         cy.contains('button', 'Confirmer mon inscription').click()
-
         cy.wait('@inscription')
         cy.contains('Inscription confirmée').should('be.visible')
         cy.contains('awa@example.com').should('be.visible')
@@ -55,10 +52,7 @@ describe("Inscription à un événement", () => {
         cy.get('input[placeholder="Votre adresse email"]').type('awa@example.com', { delay: 200 })
         cy.wait(1500)
         cy.contains('button', 'Confirmer mon inscription').click()
-
         cy.wait('@inscription')
-
-        // On remonte en haut du formulaire pour voir le message d'erreur
         cy.scrollTo('top', { duration: 800 })
         cy.wait(1000)
         cy.contains('Cet événement est complet').should('be.visible')
