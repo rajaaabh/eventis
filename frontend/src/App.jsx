@@ -9,6 +9,7 @@ import Catalogue from './pages/public/Catalogue'
 import DetailEvenement from './pages/public/DetailEvenement'
 import Desinscription from './pages/public/Desinscription'
 import Contact from './pages/public/Contact'
+import PolitiqueConfidentialite from './pages/public/PolitiqueConfidentialite'
 
 // Pages admin
 import Login from './pages/admin/Login'
@@ -37,6 +38,7 @@ export default function App() {
                     <Route path="/evenements/:id" element={<DetailEvenement />} />
                     <Route path="/desinscription/:token" element={<Desinscription />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
 
                     {/* Auth */}
                     <Route path="/admin/login" element={<Login />} />
@@ -56,7 +58,7 @@ export default function App() {
                     <Route path="/admin/organisateurs" element={<ProtectedRoute><Organisateurs /></ProtectedRoute>} />
                     <Route path="/admin/organisateurs/creer" element={<ProtectedRoute><OrganisateurForm /></ProtectedRoute>} />
                     <Route path="/admin/organisateurs/:id/modifier" element={<ProtectedRoute><OrganisateurForm /></ProtectedRoute>} />
-                    <Route path="/admin/inscriptions" element={<ProtectedRoute><Inscriptions /></ProtectedRoute>} />
+                    <Route path="/admin/inscriptions" element={<ProtectedRoute><Inscriptions/></ProtectedRoute>} />
                     <Route path="/admin/inscriptions/:id" element={<ProtectedRoute><InscriptionDetail /></ProtectedRoute>} />
                 </Routes>
             </AuthProvider>
