@@ -10,6 +10,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.3",
+        "fakerphp/faker": "^1.23",
         "guzzlehttp/guzzle": "7.12.1",
         "guzzlehttp/promises": "2.5",
         "laravel/framework": "^13.8",
@@ -20,7 +21,6 @@
         "sentry/sentry-laravel": "*"
     },
     "require-dev": {
-        "fakerphp/faker": "^1.23",
         "laravel/pail": "^1.2.5",
         "laravel/pao": "^1.0.6",
         "laravel/pint": "^1.27",
