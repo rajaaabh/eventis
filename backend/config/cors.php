@@ -1,11 +1,10 @@
 <?php
-
 return [
     'paths' => ['api/*', 'sanctum/csrf-cookie'],
     'allowed_methods' => ['*'],
     'allowed_origins' => [
         'http://localhost:5173',
-        'https://endearing-miracle-production-f44b.up.railway.app',
+        'https://miraculous-happiness-production-874d.up.railway.app',
     ],
     'allowed_origins_patterns' => [],
     'allowed_headers' => ['*'],
