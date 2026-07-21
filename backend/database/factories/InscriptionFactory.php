@@ -15,9 +15,10 @@ class InscriptionFactory extends Factory
     {
         return [
             'evenement_id'         => Evenement::factory(),
-            'nom_participant'      => $this->faker->name(),
-            'email_participant'    => $this->faker->safeEmail(),
+            'nom_participant'      => fake()->name(),
+            'email_participant'    => fake()->safeEmail(),
             'token_desinscription' => Str::uuid(),
         ];
     }
 }
+

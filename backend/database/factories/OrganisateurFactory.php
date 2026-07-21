@@ -12,10 +12,11 @@ class OrganisateurFactory extends Factory
     public function definition(): array
     {
         return [
-            'nom'         => $this->faker->company(),
-            'email'       => $this->faker->unique()->safeEmail(),
-            'telephone'   => $this->faker->phoneNumber(),
-            'description' => $this->faker->paragraph(),
+            'nom'         => fake()->company(),
+            'email'       => fake()->unique()->safeEmail(),
+            'telephone'   => fake()->phoneNumber(),
+            'description' => fake()->paragraph(),
         ];
     }
 }
+

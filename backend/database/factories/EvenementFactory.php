@@ -19,7 +19,7 @@ class EvenementFactory extends Factory
 
     public function definition(): array
     {
-        $dateDebut = $this->faker->dateTimeBetween('+1 day', '+6 months');
+        $dateDebut = fake()->dateTimeBetween('+1 day', '+6 months');
         $dateFin   = (clone $dateDebut)->modify('+2 days');
 
         return [
@@ -27,12 +27,12 @@ class EvenementFactory extends Factory
             'categorie_id'    => Categorie::query()->inRandomOrder()->value('id') ?? Categorie::factory(),
             'organisateur_id' => Organisateur::query()->inRandomOrder()->value('id') ?? Organisateur::factory(),
             'localisation_id' => Localisation::query()->inRandomOrder()->value('id') ?? Localisation::factory(),
-            'titre'           => $this->faker->sentence(4),
-            'description'     => $this->faker->paragraph(),
+            'titre'           => fake()->sentence(4),
+            'description'     => fake()->paragraph(),
             'date_debut'      => $dateDebut,
             'date_fin'        => $dateFin,
-            'lieu'            => $this->faker->streetAddress(),
-            'capacite_max'    => $this->faker->randomElement([50, 100, 200]),
+            'lieu'            => fake()->streetAddress(),
+            'capacite_max'    => fake()->randomElement([50, 100, 200]),
             'statut'          => 'publie',
             'image'           => null,
         ];
@@ -60,3 +60,4 @@ class EvenementFactory extends Factory
         ]);
     }
 }
+
