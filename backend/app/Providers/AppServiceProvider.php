@@ -28,5 +28,10 @@ class AppServiceProvider extends ServiceProvider
                     ], 429);
                 });
         });
+
+        // Rate limiting sur l'API - max 60 requêtes par minute par utilisateur/IP
+        RateLimiter::for('api', function (Request $request) {
+            return Limit::perMinute(60)->by($request->user()?->id ?: $request->ip());
+        });
     }
 }
