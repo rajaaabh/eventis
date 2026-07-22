@@ -158,9 +158,17 @@ class EvenementController extends Controller
     /**
      * Annuler un événement
      */
-    public function annuler($id)
+    public function annuler($id, \Illuminate\Http\Request $request)
     {
         $evenement = Evenement::findOrFail($id);
+
+        // Vérification de propriété — seul le créateur de l'événement peut l'annuler
+        if ($evenement->user_id !== $request->user()->id) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Vous n\'êtes pas autorisé à annuler cet événement.',
+            ], 403);
+        }
 
         // Vérifier que l'événement n'est pas déjà annulé
         if ($evenement->statut === 'annule') {
