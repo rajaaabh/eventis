@@ -25,12 +25,13 @@ RUN apk add --no-cache \
         gd \
     && pecl install xdebug \
     && docker-php-ext-enable xdebug
-
+RUN apk upgrade --no-cache c-ares
+RUN echo "expose_php = Off" >> /usr/local/etc/php/conf.d/zz-security.ini
 RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
 
 # Configuration Xdebug — couverture de code pour PHPUnit uniquement
 RUN { \
-        echo "xdebug.mode=coverage"; \
+        echo "xdebug.mode=off"; \
     } > /usr/local/etc/php/conf.d/xdebug.ini
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
