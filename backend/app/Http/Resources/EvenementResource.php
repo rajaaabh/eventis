@@ -21,7 +21,9 @@ class EvenementResource extends JsonResource
             'lieu' => $this->lieu,
             'capacite_max' => $this->capacite_max,
             'statut' => $this->statut,
-            'image' => $this->image ? asset('storage/' . $this->image) : null,
+            'image' => $this->image
+                ? (str_starts_with($this->image, 'http') ? $this->image : asset('storage/' . $this->image))
+                : null,
             'categorie' => new CategorieResource($this->whenLoaded('categorie')),
             'localisation' => new LocalisationResource($this->whenLoaded('localisation')),
             'organisateur' => new OrganisateurResource($this->whenLoaded('organisateur')),
